@@ -1,0 +1,265 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-transform: capitalize;
+  text-decoration: none;
+}
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: white;
+  /* border-bottom: 1px solid #00a0d7; */
+  /* box-shadow: 0 0 50px 0 rgb(0 160 215 / 35%); */
+  padding: 8px 7%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 1000;
+}
+.logo {
+  height: auto;
+  width: 200px;
+}
+header .navbar ul {
+  display: flex;
+}
+
+header .navbar ul li {
+  list-style: none;
+  position: relative;
+  float: left;
+}
+.li_div {
+  /* background-color: red; */
+}
+
+header .navbar ul li a {
+  display: block;
+  color: black;
+  font-size: 14px;
+  padding: 25px;
+}
+
+header .navbar ul li a:hover {
+  color: #0091c3;
+}
+
+header .navbar ul li ul {
+  position: absolute;
+  left: 0;
+  top: 62px;
+  width: 250px;
+  text-align: left;
+
+  background-color: #fff;
+  box-shadow: 0 0 50px 0 rgb(0 160 215 / 35%);
+  display: none;
+}
+header .navbar ul li ul li {
+  width: 100%;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+header .navbar ul li ul li a {
+  font-size: 14px;
+  padding: 15px;
+}
+header .navbar ul li:focus-within > ul,
+header .navbar ul li:hover > ul {
+  display: initial;
+}
+#menu-bar {
+  display: none;
+}
+
+header label {
+  font-size: 30px;
+  color: black;
+  cursor: pointer;
+  display: none;
+}
+.nav_fle_div {
+  display: flex;
+  align-items: center;
+  margin-left: 230px;
+}
+.nav_fle_div a {
+  text-transform: lowercase;
+}
+.faEnvelope {
+  color: white;
+  /* background-color: #f17732; */
+  background-color: #00a0d7;
+  padding: 5px;
+  border-radius: 50%;
+  font-size: 10px;
+  margin-right: -10px;
+}
+@media screen and (max-width: 1536px) {
+  .nav_fle_div {
+    display: flex;
+    align-items: center;
+    margin-left: 130px;
+  }
+}
+@media screen and (max-width: 1385px) {
+  .nav_fle_div {
+    margin-left: 65px;
+  }
+}
+@media screen and (max-width: 1309px) {
+  .nav_fle_div {
+    margin-left: 30px;
+  }
+}
+@media screen and (max-width: 1269px) {
+  .nav_fle_div {
+    margin-left: 10px;
+  }
+}
+@media screen and (max-width: 1245px) {
+  .nav_fle_div {
+    margin-left: 0px;
+  }
+}
+@media screen and (max-width: 1234px) {
+  .nav_fle_div {
+    margin-left: 80px;
+  }
+  header {
+    padding: 8px 1%;
+  }
+}
+@media screen and (max-width: 1179px) {
+  .nav_fle_div {
+    margin-left: 50px;
+  }
+  header {
+    padding: 0px 1%;
+  }
+}
+@media screen and (max-width: 1134px) {
+  .nav_fle_div {
+    margin-left: 20px;
+  }
+}
+@media screen and (max-width: 1103px) {
+  header {
+    padding: 0px 0%;
+  }
+  .li_div {
+    /* background-color: red; */
+    width: 85%;
+  }
+  .nav_fle_div {
+    margin-left: 0px;
+  }
+}
+@media screen and (max-width: 1061px) {
+  header {
+    padding: 20px;
+    background-color: #eee;
+  }
+  header lable {
+    display: initial;
+  }
+
+  header .navbar {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+
+    background-color: #eee;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    display: none;
+  }
+  header .navbar ul {
+    height: 400px;
+
+    overflow: auto;
+  }
+  header .navbar ul li {
+    width: 100%;
+    text-align: left;
+  }
+  .photo_gallery {
+    margin-top: 50px;
+  }
+  header .navbar ul li ul {
+    position: relative;
+  }
+  header .navbar ul li ul li {
+    background-color: #eee;
+  }
+  header .navbar ul li ul li ul {
+    width: 100%;
+    left: 0;
+  }
+  header label {
+    display: initial;
+  }
+
+  #menu-bar:checked ~ .navbar {
+    display: initial;
+  }
+  .nav_fle_div {
+    display: none;
+  }
+}
+@media screen and (max-width: 1056px) {
+  header {
+    padding: 10px 1%;
+  }
+}
+/* @media screen and (max-width: 1024px) {
+    header {
+      padding: 20px;
+      background-color: #eee;
+    }
+    header lable {
+      display: initial;
+    }
+  
+    header .navbar {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      right: 0;
+  
+      background-color: #eee;
+      border-top: 1px solid rgba(0, 0, 0, 0.1);
+      display: none;
+    }
+    header .navbar ul {
+      height: 400px;
+  
+      overflow: auto;
+    }
+    header .navbar ul li {
+      width: 100%;
+      text-align: left;
+    }
+    header .navbar ul li ul {
+      position: relative;
+    }
+    header .navbar ul li ul li {
+      background-color: #eee;
+    }
+    header .navbar ul li ul li ul {
+      width: 100%;
+      left: 0;
+    }
+    header label {
+      display: initial;
+    }
+  
+    #menu-bar:checked ~ .navbar {
+      display: initial;
+    }
+    .nav_fle_div {
+      display: none;
+    }
+  } */
