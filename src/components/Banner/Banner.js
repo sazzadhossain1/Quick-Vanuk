@@ -1,10 +1,11 @@
 import React from "react";
 import "./Banner.css";
+import bannerPhoto from "../../accets/banner/bannerPhoto.webp";
 
 const Banner = () => {
   return (
     <div>
-      <h1>This is banner</h1>
+      <img className="bannerPhoto" src={bannerPhoto} alt="" />
     </div>
   );
 };

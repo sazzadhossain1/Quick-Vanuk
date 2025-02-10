@@ -1,0 +1,131 @@
+.footer_parent_div {
+  background-attachment: fixed;
+  /* background-image: url("../../accets/FooterPhotos/footerBackground.png"); */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 50px;
+  /* padding-bottom: 50px; */
+}
+
+.footer_grit_div {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: 60%;
+  gap: 50px;
+  margin: auto;
+}
+.footer_cart {
+  text-align: left;
+
+  width: 85%;
+}
+.footer_cart h3 {
+  font-size: 30px;
+  color: #ff671d;
+
+  width: 85%;
+}
+.footer_contact_div {
+  display: flex;
+
+  padding: 0;
+  align-items: center;
+  gap: 20px;
+}
+.footer_contact_div div {
+  width: 100%;
+}
+.footer_three_cart_parent_div {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  text-align: left;
+}
+.footer_three_cart_parent_div div p a {
+  color: black;
+  line-height: 30px;
+}
+.footer_down_main_parent_div {
+  background-color: white;
+  padding: 10px;
+  margin-top: 30px;
+}
+.footer_down_part_div {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  width: 70%;
+  margin: auto;
+}
+
+.footer_logo {
+  color: black;
+  font-size: 1.1rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  line-height: 3rem;
+}
+
+.footer_logo span {
+  font-weight: 300;
+}
+
+.icon_one {
+  margin-right: 10px;
+  font-size: 20px;
+}
+.icon_two {
+  margin-right: 10px;
+  font-size: 20px;
+}
+.icon_three {
+  font-size: 21px;
+}
+.blank_div {
+  background-color: gray;
+  height: 1px;
+  width: 85%;
+  margin: auto;
+}
+
+@media screen and (max-width: 1536px) {
+  .footer_grit_div {
+    width: 70%;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .footer_grit_div {
+    width: 90%;
+  }
+  .footer_down_part_div {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 900px) {
+  .footer_grit_div {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .footer_down_part_div {
+    width: 98%;
+  }
+}
+@media screen and (max-width: 900px) {
+  .footer_three_cart_parent_div {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .footer_down_part_div {
+    width: 98%;
+  }
+}
+@media screen and (max-width: 512px) {
+  .footer_three_cart_parent_div {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .footer_down_part_div {
+    grid-template-columns: 1fr;
+    width: 98%;
+  }
+}

@@ -19,6 +19,9 @@ header {
   justify-content: space-between;
   z-index: 1000;
 }
+.quickVanuk {
+  color: #ff671d;
+}
 .logo {
   height: auto;
   width: 200px;

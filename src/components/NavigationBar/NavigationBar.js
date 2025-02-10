@@ -15,7 +15,7 @@ const NavigationBar = () => {
       <header>
         <Link to="/home">
           {/* <img className="logo" src={logo} alt="" /> */}
-          <h1>Quick Vanuk</h1>
+          <h1 className="quickVanuk">Quick Vanuk</h1>
         </Link>
         <input type="checkbox" id="menu-bar" />
         <label htmlFor="menu-bar">
@@ -26,13 +26,10 @@ const NavigationBar = () => {
           <ul>
             <div className="li_div">
               <li>
-                <Link to="/#about-section">About</Link>
-              </li>
-              <li>
                 <Link>
-                  Treatment & Surgery <FontAwesomeIcon icon={faAngleDown} />
+                  Business <FontAwesomeIcon icon={faAngleDown} />
                 </Link>
-                <ul>
+                {/* <ul>
                   <li>
                     <Link to="/brainTumourOperation">
                       Brain Tumour Operation
@@ -78,9 +75,11 @@ const NavigationBar = () => {
                       Stroke Surgery (Urgent Surgery Of Stroke Patients)
                     </Link>
                   </li>
-                </ul>
+                </ul> */}
               </li>
-
+              <li>
+                <Link to="/#about-section">Personal</Link>
+              </li>
               {/* <li>
                 <Link>
                   Gallery <FontAwesomeIcon icon={faAngleDown} />
@@ -95,13 +94,13 @@ const NavigationBar = () => {
                 </ul>
               </li> */}
               <li className="photo_gallery">
-                <Link to="/photoGallery">Photo Gallery</Link>
+                <Link to="/photoGallery">Driver</Link>
               </li>
               <li>
-                <Link to="/videoGallery">Patient Feedback</Link>
+                <Link to="/videoGallery">Rewards</Link>
               </li>
               <li>
-                <Link>Location</Link>
+                <Link>Company</Link>
               </li>
             </div>
             <li>
