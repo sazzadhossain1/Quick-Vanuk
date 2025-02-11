@@ -1,0 +1,13 @@
+.forthSection_parent_div {
+  margin-top: 100px;
+}
+.fourNumber_grid_div {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: 75%;
+  margin: auto;
+  margin-top: 50px;
+}
+.forthNumberSectionPhotoOne {
+  width: 100%;
+}
