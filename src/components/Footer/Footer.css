@@ -1,11 +1,7 @@
 .footer_parent_div {
-  background-attachment: fixed;
-  /* background-image: url("../../accets/FooterPhotos/footerBackground.png"); */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  padding-top: 50px;
-  /* padding-bottom: 50px; */
+  background-color: #f1f3f4;
+  padding: 20px;
+  margin-top: 20px;
 }
 
 .footer_grit_div {
@@ -46,7 +42,6 @@
   line-height: 30px;
 }
 .footer_down_main_parent_div {
-  background-color: white;
   padding: 10px;
   margin-top: 30px;
 }

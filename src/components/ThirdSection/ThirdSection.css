@@ -1,0 +1,55 @@
+.third_section_parent_div {
+  background-color: #f1f3f4;
+  margin-top: 50px;
+  padding: 40px;
+}
+.third_section_grid_div {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  width: 40%;
+  gap: 30px;
+  margin: auto;
+  margin-top: 50px;
+}
+.third_section_img_div {
+  width: 80%;
+}
+.thirdSectionPhotoOne {
+  width: 100%;
+  border: 10px solid black;
+  border-radius: 15px;
+  object-fit: contain;
+}
+
+.third_section_text_div {
+  text-align: left;
+}
+.third_number_div {
+  margin-bottom: 10px;
+  background-color: #ff671d;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  padding: 15px;
+  position: relative;
+}
+.third_number_div p {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 0;
+  left: 9px;
+}
+.third_section_text_div h2 {
+  margin-bottom: 20px;
+}
+.third_section_btn {
+  background-color: #ff671d;
+  border: none;
+  color: white;
+  padding: 15px;
+  width: 50%;
+  border-radius: 2px;
+  margin-top: 20px;
+}
