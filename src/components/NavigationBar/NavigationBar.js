@@ -8,14 +8,15 @@ import {
   faBars,
   faEnvelope,
 } from "@fortawesome/free-solid-svg-icons";
+import logo from "../../accets/logo/logo.png";
 
 const NavigationBar = () => {
   return (
     <div>
       <header>
         <Link to="/home">
-          {/* <img className="logo" src={logo} alt="" /> */}
-          <h1 className="quickVanuk">Quick Vanuk</h1>
+          <img className="logo" src={logo} alt="" />
+          {/* <h1 className="quickVanuk">Quick Vanuk</h1> */}
         </Link>
         <input type="checkbox" id="menu-bar" />
         <label htmlFor="menu-bar">
@@ -25,9 +26,12 @@ const NavigationBar = () => {
         <nav className="navbar">
           <ul>
             <div className="li_div">
+              <li className="photo_gallery">
+                <Link to="/photoGallery">Home</Link>
+              </li>
               <li>
                 <Link>
-                  Business <FontAwesomeIcon icon={faAngleDown} />
+                  Services <FontAwesomeIcon icon={faAngleDown} />
                 </Link>
                 {/* <ul>
                   <li>
@@ -78,7 +82,7 @@ const NavigationBar = () => {
                 </ul> */}
               </li>
               <li>
-                <Link to="/#about-section">Personal</Link>
+                <Link to="/#about-section">Pricing</Link>
               </li>
               {/* <li>
                 <Link>
@@ -94,13 +98,19 @@ const NavigationBar = () => {
                 </ul>
               </li> */}
               <li className="photo_gallery">
-                <Link to="/photoGallery">Driver</Link>
+                <Link to="/photoGallery"> Book a Van</Link>
               </li>
               <li>
-                <Link to="/videoGallery">Rewards</Link>
+                <Link to="/videoGallery">About Us</Link>
               </li>
               <li>
-                <Link>Company</Link>
+                <Link> Become a Driver</Link>
+              </li>
+              <li>
+                <Link> FAQs</Link>
+              </li>
+              <li>
+                <Link> Contact Us</Link>
               </li>
             </div>
             <li>

@@ -12,19 +12,21 @@ header {
   right: 0;
   background-color: white;
   /* border-bottom: 1px solid #00a0d7; */
-  /* box-shadow: 0 0 50px 0 rgb(0 160 215 / 35%); */
-  padding: 8px 7%;
+  box-shadow: 0 0 50px 0 rgba(127, 222, 253, 0.35);
+  padding: 0px 2%;
   display: flex;
   align-items: center;
   justify-content: space-between;
   z-index: 1000;
 }
-.quickVanuk {
+/* .quickVanuk {
   color: #ff671d;
-}
+} */
 .logo {
-  height: auto;
-  width: 200px;
+  height: 90px;
+  width: 300px;
+  object-fit: contain;
+  /* background-color: red; */
 }
 header .navbar ul {
   display: flex;
