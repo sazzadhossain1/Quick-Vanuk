@@ -1,0 +1,29 @@
+.fifthSection_parent_div {
+  background-color: #f1f3f4;
+  margin-top: 30px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+
+  display: flex;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+}
+.fifthSection_text_div {
+  text-align: left;
+}
+.fifthSection_text_div h1 {
+  margin-bottom: 10px;
+}
+.fifthSection_text_div p {
+  margin-bottom: 10px;
+}
+.fifthSection_text_div button {
+  padding: 10px;
+  border: none;
+  background-color: #ff671d;
+  margin-top: 20px;
+  color: white;
+  border-radius: 2px;
+}
