@@ -12,8 +12,8 @@ const Home = () => {
     <div className="home_parent_div">
       <Banner></Banner>
       <FirstSection></FirstSection>
-      {/* <SecondSection></SecondSection>
-      <ThirdSection></ThirdSection>
+      <SecondSection></SecondSection>
+      {/* <ThirdSection></ThirdSection>
       <ForthSection></ForthSection>
       <FifthSection></FifthSection> */}
     </div>
