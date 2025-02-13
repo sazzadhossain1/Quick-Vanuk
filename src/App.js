@@ -2,6 +2,12 @@ import "./App.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Main from "./LayOut/Main";
 import Home from "./components/Home/Home";
+import Pricing from "./components/Pricing/Pricing";
+import BookAVan from "./components/BookAVan/BookAVan";
+import AboutUs from "./components/AboutUs/AboutUs";
+import BecomeADriver from "./components/BecomeADriver/BecomeADriver";
+import Faqs from "./components/Faqs/Faqs";
+import ContactUs from "./components/ContactUs/ContactUs";
 
 function App() {
   const router = createBrowserRouter([
@@ -16,6 +22,30 @@ function App() {
         {
           path: "/home",
           element: <Home></Home>,
+        },
+        {
+          path: "/pricing",
+          element: <Pricing></Pricing>,
+        },
+        {
+          path: "/bookAVan",
+          element: <BookAVan></BookAVan>,
+        },
+        {
+          path: "/aboutUs",
+          element: <AboutUs></AboutUs>,
+        },
+        {
+          path: "/becomeADriver",
+          element: <BecomeADriver></BecomeADriver>,
+        },
+        {
+          path: "/faqs",
+          element: <Faqs></Faqs>,
+        },
+        {
+          path: "/contactUs",
+          element: <ContactUs></ContactUs>,
         },
       ],
     },

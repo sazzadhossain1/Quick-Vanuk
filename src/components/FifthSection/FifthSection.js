@@ -9,8 +9,8 @@ const FifthSection = () => {
       <div className="fifthSection_text_div">
         <h1>How much does it cost?</h1>
         <p>
-          Open the Lalamove app to get instant pricing details before you place
-          an order.
+          Open the Quick Vanuk app to get instant pricing details before you
+          place an order.
         </p>
         <Link>
           <button>Get a quote now</button>

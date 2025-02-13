@@ -27,7 +27,7 @@ const NavigationBar = () => {
           <ul>
             <div className="li_div">
               <li className="photo_gallery">
-                <Link to="/photoGallery">Home</Link>
+                <Link to="/home">Home</Link>
               </li>
               <li>
                 <Link>
@@ -82,7 +82,7 @@ const NavigationBar = () => {
                 </ul> */}
               </li>
               <li>
-                <Link to="/#about-section">Pricing</Link>
+                <Link to="/pricing">Pricing</Link>
               </li>
               {/* <li>
                 <Link>
@@ -98,19 +98,19 @@ const NavigationBar = () => {
                 </ul>
               </li> */}
               <li className="photo_gallery">
-                <Link to="/photoGallery"> Book a Van</Link>
+                <Link to="/bookAVan"> Book a Van</Link>
               </li>
               <li>
-                <Link to="/videoGallery">About Us</Link>
+                <Link to="/aboutUs">About Us</Link>
               </li>
               <li>
-                <Link> Become a Driver</Link>
+                <Link to="/becomeADriver"> Become a Driver</Link>
               </li>
               <li>
-                <Link> FAQs</Link>
+                <Link to="/faqs"> FAQs</Link>
               </li>
               <li>
-                <Link> Contact Us</Link>
+                <Link to="/contactUs"> Contact Us</Link>
               </li>
             </div>
             <li>
