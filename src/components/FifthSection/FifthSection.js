@@ -18,7 +18,7 @@ const FifthSection = () => {
       </div>
 
       <div>
-        <img src={fifthSectionPhoto} alt="" />
+        <img className="fifthSectionPhoto" src={fifthSectionPhoto} alt="" />
       </div>
     </div>
   );
