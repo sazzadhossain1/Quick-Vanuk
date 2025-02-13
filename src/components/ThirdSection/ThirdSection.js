@@ -16,25 +16,25 @@ const ThirdSection = () => {
           />
         </div>
         <div className="third_section_text_div">
-          <div>
+          <div className="third_number_flex_div">
             <div className="third_number_div">
               <p>1</p>
             </div>
             <h2>Download the QuickVanuk</h2>
           </div>
-          <div>
+          <div className="third_number_flex_div">
             <div className="third_number_div">
               <p>2</p>
             </div>
             <h2>Download the QuickVanuk</h2>
           </div>
-          <div>
+          <div className="third_number_flex_div">
             <div className="third_number_div">
               <p>3</p>
             </div>
             <h2>Download the QuickVanuk</h2>
           </div>
-          <div>
+          <div className="third_number_flex_div">
             <div className="third_number_div">
               <p>4</p>
             </div>

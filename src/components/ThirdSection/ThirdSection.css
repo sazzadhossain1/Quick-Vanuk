@@ -14,6 +14,7 @@
 }
 .third_section_img_div {
   width: 80%;
+  object-fit: contain;
 }
 .thirdSectionPhotoOne {
   width: 100%;
@@ -49,7 +50,89 @@
   border: none;
   color: white;
   padding: 15px;
-  width: 50%;
+  width: 100%;
   border-radius: 2px;
+
+  /* margin: auto; */
   margin-top: 20px;
+}
+
+@media screen and (max-width: 1674px) {
+  .third_section_grid_div {
+    width: 60%;
+    gap: 0px;
+  }
+  .third_section_img_div {
+    width: 60%;
+  }
+}
+@media screen and (max-width: 1092px) {
+  .third_section_grid_div {
+    width: 100%;
+  }
+  .third_section_img_div {
+    width: 40%;
+    margin: auto;
+  }
+}
+@media screen and (max-width: 688px) {
+  .third_section_grid_div {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+  .third_section_img_div {
+    width: 40%;
+    margin: auto;
+  }
+  .third_section_text_div {
+    margin: auto;
+  }
+  .third_number_flex_div {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+  }
+  .third_section_btn {
+    margin: auto;
+  }
+}
+@media screen and (max-width: 463px) {
+  .third_section_grid_div {
+    grid-template-columns: 1fr;
+    gap: 50px;
+  }
+  .third_section_img_div {
+    width: 50%;
+  }
+
+  .third_number_flex_div {
+    display: flex;
+
+    align-items: center;
+    gap: 50px;
+  }
+  .third_number_flex_div h2 {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 413px) {
+  .third_number_flex_div {
+    gap: 20px;
+  }
+  .third_number_flex_div h2 {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 357px) {
+  .third_section_img_div {
+    width: 70%;
+  }
+  .third_number_flex_div {
+    flex-direction: column;
+    align-items: start;
+    gap: 10px;
+  }
+  .third_number_flex_div h2 {
+    font-size: 18px;
+  }
 }
