@@ -8,7 +8,7 @@ import {
   faBars,
   faEnvelope,
 } from "@fortawesome/free-solid-svg-icons";
-import logo from "../../accets/logo/logo.png";
+import logo from "../../accets/logo/Logo PNG.png";
 
 const NavigationBar = () => {
   return (
