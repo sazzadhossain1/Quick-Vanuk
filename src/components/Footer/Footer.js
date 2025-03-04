@@ -13,6 +13,12 @@ const Footer = () => {
       <div className="footer_grit_div">
         <div className="footer_cart">
           <h3>Quick Vanuk</h3>
+          <div className="footer_quick_contact_div">
+            <p>📞 Phone: +44 XXXXXXXXXX</p>
+            <p>📧 Email: support@quickvanuk.com</p>
+            <p>🏢 Office: London, UK</p>
+            <p>🕒 Hours: Mon-Sat: 8 AM - 8 PM | Sun: 10 AM - 5 PM</p>
+          </div>
         </div>
         <div className="footer_three_cart_parent_div">
           <div>

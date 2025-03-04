@@ -14,8 +14,13 @@
 }
 .footer_cart {
   text-align: left;
-
   width: 85%;
+}
+.footer_quick_contact_div {
+  margin-top: 10px;
+}
+.footer_quick_contact_div p {
+  margin-top: 5px;
 }
 .footer_cart h3 {
   font-size: 30px;

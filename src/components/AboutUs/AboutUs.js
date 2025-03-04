@@ -12,10 +12,10 @@ const AboutUs = () => {
             We are a tech-driven, customer-focused van and logistics service
             offering reliable, affordable, and efficient transportation.
           </p>
+          <p>🔹Mission & Values – Reliability, Affordability, Efficiency.</p>
           <p>
-            🔹Mission & Values – Reliability, Affordability, Efficiency.🔹 Meet
-            Our Team – Professional drivers, support staff, and logistics
-            experts.
+            🔹 Meet Our Team – Professional drivers, support staff, and
+            logistics experts.
           </p>
         </div>
         <img src={aboutUsPhoto} alt="" />

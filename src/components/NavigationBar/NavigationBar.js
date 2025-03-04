@@ -113,7 +113,7 @@ const NavigationBar = () => {
                 <Link to="/faqs"> FAQs</Link>
               </li>
               <li>
-                <Link to="/contactUs"> Contact Us</Link>
+                <Link to="#"> Contact Us</Link>
               </li>
             </div>
             <li>
