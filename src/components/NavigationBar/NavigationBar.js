@@ -10,7 +10,7 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import logo from "../../accets/logo/Logo PNG.png";
 
-const NavigationBar = () => {
+const NavigationBar = ({ scrollToFooter }) => {
   return (
     <div>
       <header>
@@ -113,7 +113,10 @@ const NavigationBar = () => {
                 <Link to="/faqs"> FAQs</Link>
               </li>
               <li>
-                <Link to="#"> Contact Us</Link>
+                <Link to="#" onClick={scrollToFooter}>
+                  {" "}
+                  Contact Us
+                </Link>
               </li>
             </div>
             <li>

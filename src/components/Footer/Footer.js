@@ -1,4 +1,4 @@
-import React from "react";
+import React, { forwardRef } from "react";
 import "./Footer.css";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -7,9 +7,9 @@ import {
   faLinkedin,
   faYoutube,
 } from "@fortawesome/free-brands-svg-icons";
-const Footer = () => {
+const Footer = forwardRef((props, ref) => {
   return (
-    <div className="footer_parent_div">
+    <div ref={ref} className="footer_parent_div">
       <div className="footer_grit_div">
         <div className="footer_cart">
           <h3>Quick Vanuk</h3>
@@ -88,6 +88,6 @@ const Footer = () => {
       </div>
     </div>
   );
-};
+});
 
 export default Footer;
