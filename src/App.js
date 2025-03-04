@@ -8,6 +8,7 @@ import AboutUs from "./components/AboutUs/AboutUs";
 import BecomeADriver from "./components/BecomeADriver/BecomeADriver";
 import Faqs from "./components/Faqs/Faqs";
 import ContactUs from "./components/ContactUs/ContactUs";
+import Service from "./components/Service/Service";
 
 function App() {
   const router = createBrowserRouter([
@@ -46,6 +47,10 @@ function App() {
         {
           path: "/contactUs",
           element: <ContactUs></ContactUs>,
+        },
+        {
+          path: "/service",
+          element: <Service></Service>,
         },
       ],
     },

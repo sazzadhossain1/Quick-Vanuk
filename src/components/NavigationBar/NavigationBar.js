@@ -29,11 +29,11 @@ const NavigationBar = () => {
               <li className="photo_gallery">
                 <Link to="/home">Home</Link>
               </li>
-              <li>
+              {/* <li>
                 <Link>
                   Services <FontAwesomeIcon icon={faAngleDown} />
                 </Link>
-                {/* <ul>
+                <ul>
                   <li>
                     <Link to="/brainTumourOperation">
                       Brain Tumour Operation
@@ -79,7 +79,10 @@ const NavigationBar = () => {
                       Stroke Surgery (Urgent Surgery Of Stroke Patients)
                     </Link>
                   </li>
-                </ul> */}
+                </ul>
+              </li> */}
+              <li>
+                <Link to="/service">Service</Link>
               </li>
               <li>
                 <Link to="/pricing">Pricing</Link>
