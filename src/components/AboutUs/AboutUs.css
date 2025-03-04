@@ -1,3 +1,18 @@
 .about_us_parent_div {
-  margin-top: 150px;
+  margin-top: 100px;
+}
+.about_us_flex_div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: red; */
+  width: 75%;
+  margin: auto;
+}
+.about_us_text_div {
+  text-align: left;
+}
+.about_us_text_div p {
+  margin-top: 20px;
+  line-height: 27px;
 }
