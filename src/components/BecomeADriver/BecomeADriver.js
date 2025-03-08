@@ -8,8 +8,8 @@ const BecomeADriver = () => {
     email: "",
     address: "",
     phone: "",
-    licenseFile: null,
-    passportFile: null,
+    // licenseFile: null,
+    // passportFile: null,
   });
 
   const handleChange = (e) => {
@@ -17,17 +17,50 @@ const BecomeADriver = () => {
     setFormData({ ...formData, [name]: value });
   };
 
-  const handleFileChange = (e) => {
-    const { name, files } = e.target;
-    setFormData({ ...formData, [name]: files[0] });
-  };
+  // const handleFileChange = (e) => {
+  //   const { name, files } = e.target;
+  //   setFormData({ ...formData, [name]: files[0] });
+  // };
 
-  const handleSubmit = (e) => {
+  // const handleSubmit = (e) => {};
+
+  const handleSubmit = async (e) => {
     e.preventDefault();
     console.log("Form Data Submitted:", formData);
-    alert("Form Submitted Successfully!");
-  };
+    // alert("Form Submitted Successfully!");
 
+    const formDataToSend = new FormData();
+    formDataToSend.append("firstName", formData.firstName);
+    formDataToSend.append("lastName", formData.lastName);
+    formDataToSend.append("email", formData.email);
+    formDataToSend.append("address", formData.address);
+    formDataToSend.append("phone", formData.phone);
+    formDataToSend.append("licenseFile", formData.licenseFile);
+    formDataToSend.append("passportFile", formData.passportFile);
+
+    const response = await fetch("https://formspree.io/f/meoajvqe", {
+      method: "POST",
+      body: formDataToSend,
+      headers: {
+        Accept: "application/json",
+      },
+    });
+
+    if (response.ok) {
+      alert("Form submitted successfully!");
+      setFormData({
+        firstName: "",
+        lastName: "",
+        email: "",
+        address: "",
+        phone: "",
+        // licenseFile: null,
+        // passportFile: null,
+      });
+    } else {
+      alert("Failed to submit the form. Try again.");
+    }
+  };
   return (
     <div className="become_a_driver_parent_div">
       <div className="form_container">
@@ -88,7 +121,7 @@ const BecomeADriver = () => {
               onChange={handleChange}
             />
           </div>
-          <div className="form_group">
+          {/* <div className="form_group">
             <label>Upload License</label>
             <input
               type="file"
@@ -97,8 +130,8 @@ const BecomeADriver = () => {
               required
               onChange={handleFileChange}
             />
-          </div>
-          <div className="form_group">
+          </div> */}
+          {/* <div className="form_group">
             <label>Upload Passport</label>
             <input
               type="file"
@@ -107,7 +140,7 @@ const BecomeADriver = () => {
               required
               onChange={handleFileChange}
             />
-          </div>
+          </div> */}
           <button type="submit" className="submit_btn">
             Submit
           </button>
