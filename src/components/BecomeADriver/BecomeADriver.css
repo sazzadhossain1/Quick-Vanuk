@@ -1,3 +1,83 @@
 .become_a_driver_parent_div {
   margin-top: 150px;
 }
+.become_a_driver_parent_div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f4f4f4;
+  padding: 20px;
+}
+
+.form_container {
+  background: #fff;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 500px;
+}
+.form_container h1 {
+  margin-bottom: 20px;
+}
+.become_a_driver_form label {
+  text-align: left;
+}
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+.form_group {
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.form_group label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.form_group input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.form_group input[type="file"] {
+  border: none;
+}
+
+.submit_btn {
+  width: 100%;
+  padding: 12px;
+  background: #007bff;
+  color: white;
+  font-size: 18px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.submit_btn:hover {
+  background: #0056b3;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .form_container {
+    padding: 15px;
+  }
+
+  .form_group input {
+    font-size: 14px;
+  }
+
+  .submit_btn {
+    font-size: 16px;
+  }
+}
