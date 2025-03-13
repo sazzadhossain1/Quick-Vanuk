@@ -41,3 +41,13 @@
   color: white;
   cursor: pointer;
 }
+.success_message {
+  color: green;
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-align: center;
+}
+.success_message.error {
+  color: red;
+}

@@ -120,7 +120,7 @@
     width: 98%;
   }
 }
-@media screen and (max-width: 512px) {
+@media screen and (max-width: 703px) {
   .footer_three_cart_parent_div {
     grid-template-columns: repeat(1, 1fr);
   }

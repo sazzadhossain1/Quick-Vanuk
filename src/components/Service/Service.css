@@ -18,3 +18,25 @@
 .service_flex_div img {
   width: 30%;
 }
+
+@media screen and (max-width: 1150px) {
+  .service_flex_div img {
+    width: 50%;
+  }
+  .service_flex_div p {
+    text-align: left;
+  }
+}
+@media screen and (max-width: 850px) {
+  .service_flex_div {
+    flex-direction: column;
+  }
+  .service_flex_div img {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 550px) {
+  .service_cart_div h1 {
+    font-size: 25px;
+  }
+}
