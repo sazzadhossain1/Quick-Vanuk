@@ -22,3 +22,12 @@
 .pricing_text_div p {
   line-height: 26px;
 }
+
+@media screen and (max-width: 750px) {
+  .pricing_flex_div {
+    flex-direction: column;
+  }
+  .pricing_flex_div img {
+    width: 80%;
+  }
+}
