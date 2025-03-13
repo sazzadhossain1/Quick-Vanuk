@@ -18,7 +18,7 @@ const AboutUs = () => {
             logistics experts.
           </p>
         </div>
-        <img src={aboutUsPhoto} alt="" />
+        <img className="aboutUsPhoto" src={aboutUsPhoto} alt="" />
       </div>
     </div>
   );

@@ -16,3 +16,22 @@
   margin-top: 20px;
   line-height: 27px;
 }
+@media screen and (max-width: 1250px) {
+  .about_us_flex_div {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .about_us_flex_div {
+    width: 98%;
+  }
+}
+@media screen and (max-width: 900px) {
+  .about_us_flex_div {
+    flex-direction: column;
+    width: 85%;
+  }
+  .aboutUsPhoto {
+    width: 100%;
+  }
+}
