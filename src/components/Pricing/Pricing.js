@@ -4,6 +4,10 @@ import "./Pricing.css";
 import pricingPhoto from "../../accets/pricing/pricingPhoto.jpg";
 
 const Pricing = () => {
+  // For Safari
+  document.body.scrollTop = 0;
+  // For Chrome, Firefox, IE and Opera
+  document.documentElement.scrollTop = 0;
   return (
     <div className="pricing_parent_div">
       <h2>Transparent & Competitive Rates</h2>

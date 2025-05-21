@@ -3,6 +3,10 @@ import "./AboutUs.css";
 import aboutUsPhoto from "../../accets/aboutUsPhoto/aboutUsPhoto.png";
 
 const AboutUs = () => {
+  // For Safari
+  document.body.scrollTop = 0;
+  // For Chrome, Firefox, IE and Opera
+  document.documentElement.scrollTop = 0;
   return (
     <div className="about_us_parent_div">
       <h2>Why Choose QuickVanUK?</h2>

@@ -8,6 +8,10 @@ import FurnitureAndAppliance from "../../accets/service_photos/FurnitureAndAppli
 import StorePickupAndDelivery from "../../accets/service_photos/storePickupDelivery.webp";
 
 const Service = () => {
+  // For Safari
+  document.body.scrollTop = 0;
+  // For Chrome, Firefox, IE and Opera
+  document.documentElement.scrollTop = 0;
   return (
     <div className="service_parent_div">
       <div className="service_cart_div">
@@ -21,7 +25,7 @@ const Service = () => {
           </p>
         </div>
       </div>
-      <div className="service_cart_div">
+      <div className="service_cart_div_color">
         <h1>Same-Day Delivery</h1>
         <div className="service_flex_div">
           <p>
@@ -41,7 +45,7 @@ const Service = () => {
           </p>
         </div>
       </div>
-      <div className="service_cart_div">
+      <div className="service_cart_div_color">
         <h1>Furniture & Appliance Transport</h1>
         <div className="service_flex_div">
           <p>

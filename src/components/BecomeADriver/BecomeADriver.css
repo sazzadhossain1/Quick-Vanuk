@@ -1,12 +1,13 @@
 .become_a_driver_parent_div {
-  margin-top: 150px;
+  padding: 20px;
 }
 .become_a_driver_parent_div {
   display: flex;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background-color: #f4f4f4;
+  /* background-color: #f4f4f4; */
+  background-color: #eeeded;
   padding: 20px;
 }
 

@@ -61,6 +61,10 @@ const BecomeADriver = () => {
       alert("Failed to submit the form. Try again.");
     }
   };
+  // For Safari
+  document.body.scrollTop = 0;
+  // For Chrome, Firefox, IE and Opera
+  document.documentElement.scrollTop = 0;
   return (
     <div className="become_a_driver_parent_div">
       <div className="form_container">

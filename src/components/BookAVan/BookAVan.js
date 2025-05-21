@@ -119,7 +119,10 @@ const BookAVan = () => {
         }
       );
   };
-
+  // For Safari
+  document.body.scrollTop = 0;
+  // For Chrome, Firefox, IE and Opera
+  document.documentElement.scrollTop = 0;
   return (
     <div className="book_a_van_parent_div">
       <div className="book_a_van_form_div">

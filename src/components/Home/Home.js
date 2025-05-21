@@ -8,6 +8,10 @@ import ForthSection from "../ForthSection/ForthSection";
 import FifthSection from "../FifthSection/FifthSection";
 
 const Home = () => {
+  // For Safari
+  document.body.scrollTop = 0;
+  // For Chrome, Firefox, IE and Opera
+  document.documentElement.scrollTop = 0;
   return (
     <div className="home_parent_div">
       <Banner></Banner>

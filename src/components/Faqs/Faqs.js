@@ -2,6 +2,10 @@ import React from "react";
 import "./Faqs.css";
 
 const Faqs = () => {
+  // For Safari
+  document.body.scrollTop = 0;
+  // For Chrome, Firefox, IE and Opera
+  document.documentElement.scrollTop = 0;
   return (
     <div className="faqs_parent_div">
       <div className="faqs_customer_text_div">

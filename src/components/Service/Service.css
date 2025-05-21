@@ -2,7 +2,13 @@
   margin-top: 70px;
 }
 .service_cart_div {
-  background-color: rgb(238, 238, 238);
+  /* background-color: rgb(238, 238, 238); */
+
+  margin-top: 20px;
+  padding: 20px;
+}
+.service_cart_div_color {
+  background-color: #f1f3f4;
   margin-top: 20px;
   padding: 20px;
 }
