@@ -13,7 +13,7 @@ const FirstSection = () => {
         <img className="fourth_section_photoOne" src={photoOne} alt="" />
       </div>
       <div className="fourth_section_text_parent_div">
-        <h3>Why choose Quick Vanuk?</h3>
+        <h3>Why choose QuickvanUK?</h3>
         <h1 className="newsAndEvents">Your local delivery partner</h1>
         <div className="fourth_section_flex_div">
           <img className="fourth_section_flex_photo" src={photoTwo} alt="" />

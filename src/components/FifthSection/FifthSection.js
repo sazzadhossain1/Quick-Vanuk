@@ -9,7 +9,7 @@ const FifthSection = () => {
       <div className="fifthSection_text_div">
         <h1>How much does it cost?</h1>
         <p>
-          Open the Quick Vanuk app to get instant pricing details before you
+          Open the QuickvanUK app to get instant pricing details before you
           place an order.
         </p>
         <Link>

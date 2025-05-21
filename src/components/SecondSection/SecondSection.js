@@ -10,7 +10,7 @@ import photoFive from "../../accets/secondSectionPhoto/secondPhotoFive.webp";
 const SecondSection = () => {
   return (
     <div>
-      <h1>Quick Vanuk for every occasion</h1>
+      <h1>QuickvanUK for every occasion</h1>
       <div className="second_section_grid_div">
         <div>
           <img src={photoOne} alt="" />

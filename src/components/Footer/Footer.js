@@ -12,7 +12,7 @@ const Footer = forwardRef((props, ref) => {
     <div ref={ref} className="footer_parent_div">
       <div className="footer_grit_div">
         <div className="footer_cart">
-          <h3>Quick Vanuk</h3>
+          <h3>QuickvanUK</h3>
           <div className="footer_quick_contact_div">
             <p>📞 Phone: +44 XXXXXXXXXX</p>
             <p>📧 Email: support@quickvanuk.com</p>
@@ -72,11 +72,11 @@ const Footer = forwardRef((props, ref) => {
         <div className="blank_div"></div>
         <div className="footer_down_part_div">
           <div>
-            <small>© Quick Vanuk. All rights reserved.</small>
+            <small>© QuickvanUK. All rights reserved.</small>
           </div>
           <div className="footer_logo_container">
             <h3 className="footer_logo">
-              Quick <span>Vanuk</span>
+              Quick<span>vanUK</span>
             </h3>
           </div>
           <div className="footer_icon_div">
