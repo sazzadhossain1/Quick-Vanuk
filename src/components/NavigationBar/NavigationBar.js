@@ -85,7 +85,7 @@ const NavigationBar = ({ scrollToFooter }) => {
                 <Link to="/service">Service</Link>
               </li>
               <li>
-                <Link to="/pricing">Rates</Link>
+                <Link to="/pricing">Pricing</Link>
               </li>
               {/* <li>
                 <Link>
