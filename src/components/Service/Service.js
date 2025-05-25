@@ -76,9 +76,10 @@ const Service = () => {
               Perfect for home and office relocations, student moves, and small
               deliveries. Get a professional driver and van for a hassle-free
               experience.
+              {/* For home/office moves, small deliveries */}
             </p>
           </div>
-          <Link className="service_link">
+          <Link to="/serviceInnerPage" className="service_link">
             <button className="service_read_btn">Read More</button>
           </Link>
         </div>
@@ -89,9 +90,10 @@ const Service = () => {
             <p>
               Urgent package or cargo? Our on-demand same-day service ensures
               fast, secure, and efficient delivery across the UK.
+              {/* For urgent parcel and cargo delivery */}
             </p>
           </div>
-          <Link className="service_link">
+          <Link to="/serviceInnerPage" className="service_link">
             <button className="service_read_btn">Read More</button>
           </Link>
         </div>
@@ -102,9 +104,10 @@ const Service = () => {
             <p>
               We partner with e-commerce, retailers, and corporate businesses to
               provide contract-based transportation services.
+              {/* For companies needing regular transportation */}
             </p>
           </div>
-          <Link className="service_link">
+          <Link to="/serviceInnerPage" className="service_link">
             <button className="service_read_btn">Read More</button>
           </Link>
         </div>
@@ -115,9 +118,10 @@ const Service = () => {
             <p>
               Bought new furniture from IKEA, B&Q, or Argos? We’ll pick it up
               and deliver it safely to your home.
+              {/* For moving large household items */}
             </p>
           </div>
-          <Link className="service_link">
+          <Link to="/serviceInnerPage" className="service_link">
             <button className="service_read_btn">Read More</button>
           </Link>
         </div>
@@ -128,9 +132,10 @@ const Service = () => {
             <p>
               Need groceries, electronics, or other items picked up? Let us
               handle it for you!
+              {/* For IKEA, B&Q, Argos, etc. */}
             </p>
           </div>
-          <Link className="service_link">
+          <Link to="/serviceInnerPage" className="service_link">
             <button className="service_read_btn">Read More</button>
           </Link>
         </div>

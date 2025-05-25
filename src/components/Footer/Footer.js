@@ -24,46 +24,46 @@ const Footer = forwardRef((props, ref) => {
           <div>
             <h5>Comany</h5>
             <p>
-              <Link>News</Link>
+              <Link to="#">News</Link>
             </p>
             <p>
-              <Link>Career</Link>
+              <Link to="#">Career</Link>
             </p>
             <p>
-              <Link>Business</Link>
+              <Link to="#">Business</Link>
             </p>
             <p>
-              <Link>Sustainabillity</Link>
+              <Link to="#">Sustainabillity</Link>
             </p>
           </div>
           <div>
             <h5>Useful Links</h5>
             <p>
-              <Link>Media</Link>
+              <Link to="#">Media</Link>
             </p>
             <p>
-              <Link>Sponsorship</Link>
+              <Link to="#">Sponsorship</Link>
             </p>
             <p>
-              <Link>Contact</Link>
+              <Link to="#">Contact</Link>
             </p>
             <p>
-              <Link>Sitemap</Link>
+              <Link to="#">Sitemap</Link>
             </p>
           </div>
           <div>
             <h5>Legal</h5>
             <p>
-              <Link>Cookie Policy</Link>
+              <Link to="#">Cookie Policy</Link>
             </p>
             <p>
-              <Link>Data Privacy</Link>
+              <Link to="#">Data Privacy</Link>
             </p>
             <p>
-              <Link>Exclusion of Liabillty</Link>
+              <Link to="#">Exclusion of Liabillty</Link>
             </p>
             <p>
-              <Link>Imprint</Link>
+              <Link to="#">Imprint</Link>
             </p>
           </div>
         </div>
@@ -76,7 +76,7 @@ const Footer = forwardRef((props, ref) => {
           </div>
           <div className="footer_logo_container">
             <h3 className="footer_logo">
-              Quick<span>vanUK</span>
+              Quick<span>VANUK</span>
             </h3>
           </div>
           <div className="footer_icon_div">

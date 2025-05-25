@@ -9,6 +9,7 @@ import BecomeADriver from "./components/BecomeADriver/BecomeADriver";
 import Faqs from "./components/Faqs/Faqs";
 import ContactUs from "./components/ContactUs/ContactUs";
 import Service from "./components/Service/Service";
+import ServiceInnerPage from "./components/ServiceInnerPage/ServiceInnerPage";
 
 function App() {
   const router = createBrowserRouter([
@@ -51,6 +52,10 @@ function App() {
         {
           path: "/service",
           element: <Service></Service>,
+        },
+        {
+          path: "/serviceInnerPage",
+          element: <ServiceInnerPage></ServiceInnerPage>,
         },
       ],
     },

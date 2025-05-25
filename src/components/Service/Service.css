@@ -91,3 +91,24 @@
   background-color: rgb(1, 138, 202);
   color: white;
 }
+
+@media screen and (max-width: 1103px) {
+  .service_parent_div {
+    margin-top: 170px;
+  }
+}
+@media screen and (max-width: 1061px) {
+  .service_parent_div {
+    margin-top: 110px;
+  }
+}
+@media screen and (max-width: 970px) {
+  .service_grid_div {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (max-width: 630px) {
+  .service_grid_div {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}

@@ -1,0 +1,44 @@
+.serviceInnerPage_parent_div {
+  margin-top: 100px;
+  margin-bottom: 20px;
+}
+.serviceInnerPage_content_div {
+  width: 75%;
+  margin: auto;
+  text-align: left;
+}
+.service_inner_page_photo {
+  width: 100%;
+}
+.serviceInnerPage_content_div h3 {
+  margin-top: 30px;
+  margin-bottom: 15px;
+}
+.serviceInnerPage_content_div p {
+  margin-top: 20px;
+
+  line-height: 25px;
+}
+
+.service_innner_btn_div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #26b3ee;
+  padding: 20px;
+  width: 75%;
+  margin: auto;
+  margin-top: 30px;
+  color: white;
+}
+.service_inner_btn {
+  padding: 12px;
+  width: 200px;
+  border: none;
+  background-color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.service_inner_btn:hover {
+  background-color: #d4f2ff;
+}
