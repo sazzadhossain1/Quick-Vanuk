@@ -51,7 +51,7 @@ const ServiceInnerPage = () => {
       </div>
       <div className="service_innner_btn_div">
         <h3>Price</h3>
-        <Link>
+        <Link to="/servicePriceInnerPage">
           <button className="service_inner_btn">PRICE</button>
         </Link>
       </div>

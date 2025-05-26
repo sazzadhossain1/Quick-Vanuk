@@ -10,6 +10,7 @@ import Faqs from "./components/Faqs/Faqs";
 import ContactUs from "./components/ContactUs/ContactUs";
 import Service from "./components/Service/Service";
 import ServiceInnerPage from "./components/ServiceInnerPage/ServiceInnerPage";
+import ServicePriceInnerPage from "./components/ServicePriceInnerPage/ServicePriceInnerPage";
 
 function App() {
   const router = createBrowserRouter([
@@ -56,6 +57,10 @@ function App() {
         {
           path: "/serviceInnerPage",
           element: <ServiceInnerPage></ServiceInnerPage>,
+        },
+        {
+          path: "/servicePriceInnerPage",
+          element: <ServicePriceInnerPage></ServicePriceInnerPage>,
         },
       ],
     },
