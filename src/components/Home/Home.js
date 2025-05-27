@@ -6,6 +6,7 @@ import SecondSection from "../SecondSection/SecondSection";
 import ThirdSection from "../ThirdSection/ThirdSection";
 import ForthSection from "../ForthSection/ForthSection";
 import FifthSection from "../FifthSection/FifthSection";
+import Testimonials from "../Testimonials/Testimonials";
 
 const Home = () => {
   // For Safari
@@ -20,6 +21,7 @@ const Home = () => {
       <ThirdSection></ThirdSection>
       <ForthSection></ForthSection>
       <FifthSection></FifthSection>
+      <Testimonials></Testimonials>
     </div>
   );
 };

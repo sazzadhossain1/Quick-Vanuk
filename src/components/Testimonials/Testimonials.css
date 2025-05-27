@@ -1,0 +1,95 @@
+.testimonials {
+  text-align: center;
+  padding: 4rem 1rem;
+  font-family: "Segoe UI", sans-serif;
+}
+
+.testimonials h2 {
+  font-size: 2.5rem;
+  color: #e6451b;
+  margin-bottom: 0.5rem;
+}
+
+.stars {
+  font-size: 1.5rem;
+  color: #e6451b;
+  margin-bottom: 2rem;
+}
+
+.carousel-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.carousel-container {
+  overflow: hidden;
+  width: 100%;
+}
+
+.carousel-track {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  width: 100%;
+}
+
+.testimonial-card {
+  flex-shrink: 0;
+  padding: 1rem;
+  box-sizing: border-box;
+}
+
+/* Text styles */
+.text {
+  font-style: italic;
+  color: #333;
+}
+
+.author {
+  font-weight: bold;
+  margin-top: 1rem;
+}
+
+.source {
+  font-size: 0.75rem;
+  color: #e6451b;
+  text-transform: uppercase;
+}
+
+/* Arrows */
+.arrow {
+  background: none;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+  color: #e6451b;
+  padding: 0 1rem;
+  transition: opacity 0.3s;
+}
+
+.arrow:disabled {
+  opacity: 0.3;
+  cursor: not-allowed;
+}
+
+/* RESPONSIVENESS: flex-basis for cards is set inline via JS */
+@media (max-width: 1056px) {
+  .testimonial-card {
+    padding: 0.8rem;
+  }
+}
+
+@media (max-width: 950px) {
+  .testimonial-card {
+    padding: 0.6rem;
+  }
+}
+
+@media (max-width: 700px) {
+  .testimonial-card {
+    padding: 0.5rem;
+  }
+}

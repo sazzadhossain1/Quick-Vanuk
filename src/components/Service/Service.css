@@ -66,6 +66,7 @@
   /* background-color: red; */
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   padding: 20px;
+  position: relative;
 }
 .service_cart_div div h2 {
   margin-top: 15px;
@@ -74,9 +75,14 @@
 .service_cart_div div p {
   margin-top: 15px;
   margin-bottom: 10px;
+  margin-bottom: 70px;
 }
 .service_link {
   color: black;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  left: 0;
 }
 .service_read_btn {
   cursor: pointer;
