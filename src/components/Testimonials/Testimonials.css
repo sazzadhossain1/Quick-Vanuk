@@ -75,7 +75,7 @@
   cursor: not-allowed;
 }
 
-/* RESPONSIVENESS: flex-basis for cards is set inline via JS */
+/* RESPONSIVENESS */
 @media (max-width: 1056px) {
   .testimonial-card {
     padding: 0.8rem;

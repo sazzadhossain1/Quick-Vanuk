@@ -1,7 +1,7 @@
 import React from "react";
 import "./FifthSection.css";
 import { Link } from "react-router-dom";
-import fifthSectionPhoto from "../../accets/fifthSectionPhotos/fifthSectionPhoto.webp";
+import fifthSectionPhoto from "../../accets/fifthSectionPhotos/fifthSectionPhoto.png";
 
 const FifthSection = () => {
   return (

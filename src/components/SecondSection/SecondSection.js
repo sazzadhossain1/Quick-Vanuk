@@ -7,29 +7,35 @@ import photoThree from "../../accets/secondSectionPhoto/secondPhotoThird.webp";
 import photoFour from "../../accets/secondSectionPhoto/secondPhotoFour.webp";
 import photoFive from "../../accets/secondSectionPhoto/secondPhotoFive.webp";
 
+import SmallItems from "../../accets/secondSectionPhoto/SmallItems-removebg-preview.png";
+import LargeAndBulkyGoods from "../../accets/secondSectionPhoto/Large and bulky goods.png";
+import ValuablesAndDelicateGoods from "../../accets/secondSectionPhoto/Valuables and delicate goods.png";
+import MovingService from "../../accets/secondSectionPhoto/Moving service.png";
+import FoodAndGroceryDelivery from "../../accets/secondSectionPhoto/Food & grocery delivery.png";
+
 const SecondSection = () => {
   return (
     <div>
       <h1>QuickvanUK for every occasion</h1>
       <div className="second_section_grid_div">
         <div>
-          <img src={photoOne} alt="" />
+          <img src={SmallItems} alt="" />
           <h3>Small Items</h3>
         </div>
         <div>
-          <img src={photoTwo} alt="" />
+          <img src={LargeAndBulkyGoods} alt="" />
           <h3>Large and bulky goods</h3>
         </div>
         <div>
-          <img src={photoThree} alt="" />
+          <img src={ValuablesAndDelicateGoods} alt="" />
           <h3>Valuables and delicate goods</h3>
         </div>
         <div>
-          <img src={photoFour} alt="" />
+          <img src={MovingService} alt="" />
           <h3>Moving service</h3>
         </div>
         <div>
-          <img src={photoFive} alt="" />
+          <img src={FoodAndGroceryDelivery} alt="" />
           <h3>Food & grocery delivery</h3>
         </div>
       </div>
