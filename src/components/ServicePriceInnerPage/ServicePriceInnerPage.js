@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useRef, useState } from "react";
 import "./ServicePriceInnerPage.css";
 import photo from "../../accets/banner/bannerPhoto.jpg";
 import servicePriceCartPhoto from "../../accets/servicePriceInnerPage/servicePriceCartPhoto.png";
@@ -29,17 +29,6 @@ const ServicePriceInnerPage = () => {
         }
       );
   };
-
-  // MODAL FUNCTION //
-  // const modalOpen = () => {
-  //   const modalOpenDiv = document.getElementById("modal_open_div");
-  //   modalOpenDiv.removeAttribute("hidden", "hidden");
-  // };
-
-  // const closeModal = () => {
-  //   const modalOpenDiv = document.getElementById("modal_open_div");
-  //   modalOpenDiv.setAttribute("hidden", "hidden");
-  // };
 
   const modalOpen = () => {
     const modalOpenDiv = document.getElementById("modal_open_div");

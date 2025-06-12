@@ -131,6 +131,7 @@
   border-radius: 10px;
   padding-left: 15px;
   padding-right: 15px;
+  /* background-color: red; */
 }
 
 .servicePriceInnPage_bookNow_div {
@@ -197,7 +198,13 @@
 
 @media screen and (max-width: 1300px) {
   .servicePriceInnPage_form_div {
-    width: 50%;
+    width: 90%;
+  }
+  .servicePriceInnPage_modal_div {
+    background-color: white;
+    width: 70%;
+    right: 15%;
+    height: auto;
   }
 }
 @media screen and (max-width: 700px) {
