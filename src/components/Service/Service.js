@@ -1,7 +1,7 @@
 import React from "react";
 import "./Service.css";
 
-import manAndVanService from "../../accets/service_photos/manAndVanService.jpg";
+import manAndVanService from "../../accets/service_photos/manAndVanService.png";
 import sameDayDeliveryService from "../../accets/service_photos/sameDayDeliveryService.jpg";
 import BusinessLogistics from "../../accets/service_photos/BusinessLogistics.jpeg";
 import FurnitureAndAppliance from "../../accets/service_photos/FurnitureAndAppliance Transport.jpg";
