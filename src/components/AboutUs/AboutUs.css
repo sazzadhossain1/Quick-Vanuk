@@ -4,13 +4,17 @@
 .about_us_flex_div {
   display: flex;
   justify-content: center;
+  gap: 40px;
   align-items: center;
-  /* background-color: red; */
-  width: 75%;
+  width: 60%;
   margin: auto;
+  margin-bottom: 20px;
 }
 .about_us_text_div {
   text-align: left;
+}
+.aboutUsPhoto {
+  width: 30%;
 }
 .about_us_text_div p {
   margin-top: 20px;

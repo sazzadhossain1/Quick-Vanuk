@@ -75,7 +75,7 @@ export default function Testimonials() {
 
   return (
     <section className="testimonials">
-      <h2>Hear from Our Users</h2>
+      <h2>What Our Clients Say About Us</h2>
       <div className="stars">★★★★★</div>
 
       <div className="carousel-wrapper">

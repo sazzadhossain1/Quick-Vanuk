@@ -3,11 +3,7 @@ import "./NavigationBar.css";
 import { Link } from "react-router-dom";
 // import logo from "../../accets/Logo/logo.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faAngleDown,
-  faBars,
-  faEnvelope,
-} from "@fortawesome/free-solid-svg-icons";
+import { faBars } from "@fortawesome/free-solid-svg-icons";
 import logo from "../../accets/logo/Logo PNG.png";
 
 const NavigationBar = ({ scrollToFooter }) => {
