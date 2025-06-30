@@ -5,12 +5,17 @@ import photoOne from "../../accets/FourthSectionPhoto/photoOne.webp";
 import photoTwo from "../../accets/FourthSectionPhoto/photoTwo.gif";
 import photoThree from "../../accets/FourthSectionPhoto/photoThree.gif";
 import photoFour from "../../accets/FourthSectionPhoto/photoFour.gif";
+import businessLogistics from "../../accets/FourthSectionPhoto/Business Logistics.png";
 
 const FirstSection = () => {
   return (
     <div className="fourth_section_grid_div">
       <div className="photoOne_div">
-        <img className="fourth_section_photoOne" src={photoOne} alt="" />
+        <img
+          className="fourth_section_photoOne"
+          src={businessLogistics}
+          alt=""
+        />
       </div>
       <div className="fourth_section_text_parent_div">
         <h3>Why choose QuickvanUK?</h3>
