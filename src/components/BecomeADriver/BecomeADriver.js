@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./BecomeADriver.css";
+import becomeAdriverPhoto from "../../accets/becomeADriver/becomeAdriverPhoto.png";
 
 const BecomeADriver = () => {
   const [formData, setFormData] = useState({
@@ -66,89 +67,94 @@ const BecomeADriver = () => {
   // For Chrome, Firefox, IE and Opera
   document.documentElement.scrollTop = 0;
   return (
-    <div className="become_a_driver_parent_div">
-      <div className="form_container">
-        <h1>Driver Registration Form</h1>
-        <form className="become_a_driver_form" onSubmit={handleSubmit}>
-          <div className="form_group">
-            <label>First Name</label>
-            <input
-              type="text"
-              name="firstName"
-              placeholder="Enter First Name"
-              required
-              value={formData.firstName}
-              onChange={handleChange}
-            />
-          </div>
-          <div className="form_group">
-            <label>Last Name</label>
-            <input
-              type="text"
-              name="lastName"
-              placeholder="Enter Last Name"
-              required
-              value={formData.lastName}
-              onChange={handleChange}
-            />
-          </div>
-          <div className="form_group">
-            <label>Email</label>
-            <input
-              type="email"
-              name="email"
-              placeholder="Enter Email"
-              required
-              value={formData.email}
-              onChange={handleChange}
-            />
-          </div>
-          <div className="form_group">
-            <label>Address</label>
-            <input
-              type="text"
-              name="address"
-              placeholder="Enter Address"
-              required
-              value={formData.address}
-              onChange={handleChange}
-            />
-          </div>
-          <div className="form_group">
-            <label>Phone Number</label>
-            <input
-              type="tel"
-              name="phone"
-              placeholder="Enter Phone Number"
-              required
-              value={formData.phone}
-              onChange={handleChange}
-            />
-          </div>
-          {/* <div className="form_group">
+    <div className="become_a_driver_main_parent_div">
+      <div className="become_a_driver_parent_div">
+        <div className="becomeAdriverPhoto_div">
+          <img className="becomeAdriverPhoto" src={becomeAdriverPhoto} alt="" />
+        </div>
+        <div className="form_container">
+          <h1>Driver Registration Form</h1>
+          <form className="become_a_driver_form" onSubmit={handleSubmit}>
+            <div className="form_group">
+              <label>First Name</label>
+              <input
+                type="text"
+                name="firstName"
+                placeholder="Enter First Name"
+                required
+                value={formData.firstName}
+                onChange={handleChange}
+              />
+            </div>
+            <div className="form_group">
+              <label>Last Name</label>
+              <input
+                type="text"
+                name="lastName"
+                placeholder="Enter Last Name"
+                required
+                value={formData.lastName}
+                onChange={handleChange}
+              />
+            </div>
+            <div className="form_group">
+              <label>Email</label>
+              <input
+                type="email"
+                name="email"
+                placeholder="Enter Email"
+                required
+                value={formData.email}
+                onChange={handleChange}
+              />
+            </div>
+            <div className="form_group">
+              <label>Address</label>
+              <input
+                type="text"
+                name="address"
+                placeholder="Enter Address"
+                required
+                value={formData.address}
+                onChange={handleChange}
+              />
+            </div>
+            <div className="form_group">
+              <label>Phone Number</label>
+              <input
+                type="tel"
+                name="phone"
+                placeholder="Enter Phone Number"
+                required
+                value={formData.phone}
+                onChange={handleChange}
+              />
+            </div>
+            {/* <div className="form_group">
             <label>Upload License</label>
             <input
-              type="file"
-              name="licenseFile"
-              accept="image/*,.pdf"
-              required
-              onChange={handleFileChange}
+            type="file"
+            name="licenseFile"
+            accept="image/*,.pdf"
+            required
+            onChange={handleFileChange}
             />
-          </div> */}
-          {/* <div className="form_group">
+            </div> */}
+            {/* <div className="form_group">
             <label>Upload Passport</label>
             <input
-              type="file"
-              name="passportFile"
-              accept="image/*,.pdf"
-              required
-              onChange={handleFileChange}
+            type="file"
+            name="passportFile"
+            accept="image/*,.pdf"
+            required
+            onChange={handleFileChange}
             />
-          </div> */}
-          <button type="submit" className="submit_btn">
-            Submit
-          </button>
-        </form>
+            </div> */}
+            <button type="submit" className="submit_btn">
+              Submit
+            </button>
+          </form>
+        </div>
       </div>
     </div>
   );

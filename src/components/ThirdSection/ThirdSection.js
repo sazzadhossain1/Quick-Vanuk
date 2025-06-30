@@ -1,6 +1,6 @@
 import React from "react";
 import "./ThirdSection.css";
-import thirdSectionPhotoOne from "../../accets/thirdSectionPhotos/thirdSectionPhotoOne.webp";
+import thirdSectionPhotoOne from "../../accets/thirdSectionPhotos/thirdSectionPhotoOne.png";
 import { Link } from "react-router-dom";
 
 const ThirdSection = () => {

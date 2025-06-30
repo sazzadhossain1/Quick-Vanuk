@@ -1,23 +1,30 @@
-.become_a_driver_parent_div {
-  padding: 20px;
-}
-.become_a_driver_parent_div {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-  /* background-color: #f4f4f4; */
+.become_a_driver_main_parent_div {
   background-color: #eeeded;
   padding: 20px;
 }
 
+.become_a_driver_parent_div {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  padding: 20px;
+  width: 70%;
+  margin: auto;
+  margin-top: 100px;
+  gap: 50px;
+}
+.becomeAdriverPhoto_div {
+  /* background-color: red; */
+}
+.becomeAdriverPhoto {
+  width: 100%;
+}
 .form_container {
   background: #fff;
   padding: 25px;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   width: 100%;
-  max-width: 500px;
 }
 .form_container h1 {
   margin-bottom: 20px;
@@ -69,6 +76,20 @@ h1 {
 }
 
 /* Responsive Design */
+@media screen and (max-width: 1400px) {
+  .become_a_driver_parent_div {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .become_a_driver_parent_div {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .becomeAdriverPhoto {
+    width: 100%;
+  }
+}
 @media (max-width: 600px) {
   .form_container {
     padding: 15px;
@@ -80,5 +101,15 @@ h1 {
 
   .submit_btn {
     font-size: 16px;
+  }
+}
+@media screen and (max-width: 481px) {
+  .form_container {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 346px) {
+  .form_container {
+    font-size: 10px;
   }
 }
