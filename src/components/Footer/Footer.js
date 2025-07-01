@@ -94,9 +94,9 @@ const Footer = forwardRef((props, ref) => {
               <small>© QuickvanUK. All rights reserved.</small>
             </div>
             <div className="footer_logo_container">
-              <h3 className="footer_logo">
+              <p className="footer_logo">
                 Quick<span>VANUK</span>
-              </h3>
+              </p>
             </div>
             <div className="footer_icon_div">
               <FontAwesomeIcon className="icon_one" icon={faFacebook} />
