@@ -96,6 +96,26 @@
   margin: auto;
 }
 
+/* MODAL START */
+.footer_modal_div {
+  width: 40%;
+  margin: auto;
+  background-color: white;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  padding: 20px;
+  margin-top: -600px;
+  position: relative;
+  z-index: 1;
+}
+.footer_faXmark_div {
+  display: flex;
+  justify-content: space-between;
+}
+.footer_faXmark {
+  cursor: pointer;
+}
+
+/* MODAL END */
 @media screen and (max-width: 1536px) {
   .footer_grit_div {
     width: 70%;

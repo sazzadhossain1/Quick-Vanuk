@@ -1,5 +1,7 @@
 .fifthSection_main_div {
   background-color: #f1f3f4;
+  margin-top: 30px;
+  padding-top: 40px;
 }
 .fifthSection_parent_div {
   display: flex;
@@ -10,7 +12,7 @@
   width: 75%;
   margin: auto;
   margin-top: 30px;
-  padding-top: 60px;
+  /* padding-top: 60px; */
   padding-bottom: 30px;
 }
 .fifthSection_text_div {

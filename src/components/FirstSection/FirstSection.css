@@ -2,7 +2,7 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   align-items: center;
-  width: 65%;
+  width: 85%;
   margin: auto;
   margin-top: 150px;
   margin-bottom: 100px;
@@ -19,6 +19,13 @@
 }
 .newsAndEvents {
   margin-bottom: 40px;
+}
+
+.firstSection_inner_text_div {
+  text-align: left;
+}
+.firstSection_inner_text_div p {
+  margin-bottom: 20px;
 }
 .fourth_section_flex_div {
   display: flex;

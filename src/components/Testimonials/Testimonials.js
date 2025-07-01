@@ -3,45 +3,47 @@ import "./Testimonials.css";
 
 const testimonials = [
   {
-    text: `"This React project exceeded expectations..."`,
-    author: "Emily R.",
-    source: "GITHUB FEEDBACK",
+    text: `“QuickVanUK made our house move feel effortless. On time, friendly, and everything handled with care.”`,
+    author: "— Sophie M.",
+    source: "London | TrustPilot Review",
   },
   {
-    text: `"Maintainable and scalable code..."`,
-    author: "James D.",
-    source: "DEV REVIEW",
+    text: `“Incredible service! The driver helped me move my elderly mum’s belongings safely across town. Would definitely use again.”
+`,
+    author: "— Daniel W.",
+    source: "Birmingham | Google Review",
   },
   {
-    text: `"Impressed with the animations and styling..."`,
-    author: "Ava L.",
-    source: "CODEPEN REVIEW",
+    text: `“Booking was simple, the van was clean, and the staff were very professional. A truly hassle-free experience.”`,
+    author: "— Emma L.",
+    source: "Manchester | Local Business Forum",
   },
   {
-    text: `"CSS transitions were on point..."`,
-    author: "Liam K.",
-    source: "CODE REVIEW",
+    text: `“Moved my studio equipment with zero damage. Efficient and polite from start to finish. Highly recommend!”`,
+    author: "— Liam J",
+    source: "Leeds | Facebook Recommendation",
   },
   {
-    text: `"Elegant use of reusable components..."`,
-    author: "Sophia T.",
-    source: "DEV HUB",
+    text: `“Fantastic customer support and smooth communication. They really live up to their slogan—hassle-free indeed.”`,
+    author: "— Oliver K.",
+    source: "Bristol | Google Review",
   },
   {
-    text: `"Smooth transitions and fast loading..."`,
-    author: "Ethan B.",
-    source: "REACT WEEKLY",
+    text: `“Trustworthy and reliable, just as promised. The pricing was fair and the team went above and beyond.”`,
+    author: "— Charlotte T.",
+    source: "Edinburgh | Yelp Feedback",
   },
   {
-    text: `"Beautiful CSS animations..."`,
-    author: "Chloe M.",
-    source: "CSS GALLERY",
+    text: `“Used them for an office move. Everything arrived on time and intact. Couldn’t have asked for better.”
+`,
+    author: "— Raj P.",
+    source: "Croydon | Company Internal Survey",
   },
-  {
-    text: `"I learned a lot reviewing this code!"`,
-    author: "Mason W.",
-    source: "STACK FEEDBACK",
-  },
+  // {
+  //   text: `"I learned a lot reviewing this code!"`,
+  //   author: "Mason W.",
+  //   source: "STACK FEEDBACK",
+  // },
 ];
 
 export default function Testimonials() {

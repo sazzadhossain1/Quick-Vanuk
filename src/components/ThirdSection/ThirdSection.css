@@ -21,7 +21,14 @@
   border-radius: 15px;
   object-fit: contain;
 }
-
+.third_number_flex_div {
+  margin-top: 20px;
+  /* display: flex; */
+}
+.third_number_text_flex_div {
+  display: flex;
+  gap: 10px;
+}
 .third_section_text_div {
   text-align: left;
   /* background-color: rebeccapurple; */
@@ -44,7 +51,7 @@
   left: 9px;
 }
 .third_section_text_div h2 {
-  margin-bottom: 20px;
+  margin-bottom: 0px;
 }
 .third_section_btn {
   background-color: #00478f;
@@ -57,7 +64,9 @@
   /* margin: auto; */
   margin-top: 20px;
 }
-
+.thirdSection_website_live_link {
+  margin-top: 20px;
+}
 @media screen and (max-width: 1674px) {
   .third_section_grid_div {
     width: 60%;
