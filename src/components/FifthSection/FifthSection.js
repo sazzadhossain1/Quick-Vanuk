@@ -13,8 +13,8 @@ const FifthSection = () => {
           {/* <h1>How much does it cost?</h1> */}
           <div>
             <h4>Affordable. Transparent. No Surprises</h4>
-            <p>
-              At
+            <p className="fifthSection_left_text">
+              At{" "}
               <Link to="https://quickvanuk.com/" target="_blank">
                 QuickVanUK.com
               </Link>
@@ -24,7 +24,7 @@ const FifthSection = () => {
             </p>
           </div>
           <Link>
-            <button>Get a quote now</button>
+            <button>Contact Us Today</button>
           </Link>
         </div>
 

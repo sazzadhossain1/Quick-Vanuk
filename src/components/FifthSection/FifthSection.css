@@ -20,6 +20,10 @@
   /* background-color: red; */
   width: 100%;
 }
+.fifthSection_left_text {
+  margin-top: 15px;
+  line-height: 28px;
+}
 .fifthSection_text_div h1 {
   margin-bottom: 10px;
 }
