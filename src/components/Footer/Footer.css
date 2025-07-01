@@ -22,9 +22,15 @@
 .footer_quick_contact_div p {
   margin-top: 5px;
 }
+.footer_flex_div {
+  display: flex;
+  /* align-items: center; */
+  gap: 10px;
+  margin-bottom: 6px;
+}
 .footer_cart h3 {
   font-size: 30px;
-  color: #ff671d;
+  color: #00478f;
 
   width: 85%;
 }

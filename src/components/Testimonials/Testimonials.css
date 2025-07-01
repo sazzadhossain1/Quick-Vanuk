@@ -6,13 +6,13 @@
 
 .testimonials h2 {
   font-size: 2.5rem;
-  color: #e6451b;
+  color: black;
   margin-bottom: 0.5rem;
 }
 
 .stars {
   font-size: 1.5rem;
-  color: #e6451b;
+  color: #00478f;
   margin-bottom: 2rem;
 }
 
@@ -55,7 +55,7 @@
 
 .source {
   font-size: 0.75rem;
-  color: #e6451b;
+  color: #00478f;
   text-transform: uppercase;
 }
 
@@ -65,7 +65,7 @@
   border: none;
   font-size: 2rem;
   cursor: pointer;
-  color: #e6451b;
+  color: black;
   padding: 0 1rem;
   transition: opacity 0.3s;
 }
