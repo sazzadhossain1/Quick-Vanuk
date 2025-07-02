@@ -40,7 +40,7 @@ const BookAVan = () => {
           <form ref={form} onSubmit={sendEmail}>
             <div className="form_control">
               <label className="label">
-                <span className="label-text">Your Name</span>
+                {/* <span className="label-text">Your Name</span> */}
               </label>
               <label className="input_group">
                 <input
@@ -54,7 +54,7 @@ const BookAVan = () => {
             </div>
             <div className="form_control">
               <label className="label">
-                <span className="label-text">Your Email</span>
+                {/* <span className="label-text">Your Email</span> */}
               </label>
               <label className="input_group">
                 <input
@@ -68,7 +68,7 @@ const BookAVan = () => {
             </div>
             <div className="form_control">
               <label className="label">
-                <span className="label-text">Phone Number</span>
+                {/* <span className="label-text">Phone Number</span> */}
               </label>
               <label className="input_group">
                 <input
@@ -82,7 +82,7 @@ const BookAVan = () => {
             </div>
             <div className="form_control">
               <label className="label">
-                <span className="label-text">Physical Address</span>
+                {/* <span className="label-text">Physical Address</span> */}
               </label>
               <label className="input_group">
                 <input

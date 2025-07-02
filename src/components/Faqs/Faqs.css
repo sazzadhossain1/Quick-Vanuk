@@ -4,10 +4,19 @@
 .faqs_customer_text_div h2 {
   margin-bottom: 20px;
 }
+.faqs_customer_text_div div {
+  margin-bottom: 20px;
+  line-height: 25px;
+}
 .faqs_drivers_text_div {
   margin-bottom: 160px;
 }
 .faqs_drivers_text_div h2 {
   margin-top: 20px;
   margin-bottom: 20px;
+}
+.faqs_drivers_text_div div {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  line-height: 25px;
 }

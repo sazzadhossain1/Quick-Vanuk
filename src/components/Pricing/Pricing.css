@@ -1,5 +1,5 @@
 .pricing_parent_div {
-  margin-top: 150px;
+  margin-top: 100px;
 }
 .pricing_flex_div {
   display: flex;
@@ -20,7 +20,7 @@
   text-align: left;
 }
 .pricing_text_div p {
-  line-height: 26px;
+  line-height: 30px;
 }
 
 @media screen and (max-width: 750px) {
