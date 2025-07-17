@@ -14,7 +14,7 @@ const Home = () => {
   // For Chrome, Firefox, IE and Opera
   document.documentElement.scrollTop = 0;
   return (
-    <div id="homeBlurContainer" className="home_parent_div">
+    <div className="home_parent_div">
       <Banner></Banner>
       <FirstSection></FirstSection>
       <SecondSection></SecondSection>

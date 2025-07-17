@@ -28,14 +28,16 @@ const Footer = forwardRef((props, ref) => {
 
               <div className="footer_flex_div">
                 <p>🏢</p>
-                <p>
+                <p className="footer_office">
                   Office: Unit 22B, Park Avenue Industrial Estate, Sundon Park
                   Rd, Luton LU3 3BP
                 </p>
               </div>
               <div className="footer_flex_div">
                 <p>🕒</p>
-                <p>Hours: Mon-Sat: 8 AM - 8 PM | Sun: 10 AM - 5 PM</p>
+                <p className="footer_hours">
+                  Hours: Mon-Sat: 8 AM - 8 PM | Sun: 10 AM - 5 PM
+                </p>
               </div>
             </div>
           </div>
@@ -43,46 +45,70 @@ const Footer = forwardRef((props, ref) => {
             <div>
               <h5>Comany</h5>
               <p>
-                <Link to="#">News</Link>
+                <Link to="news" target="_blank">
+                  News
+                </Link>
               </p>
               <p>
-                <Link to="#">Career</Link>
+                <Link to="/career" target="_blank">
+                  Career
+                </Link>
               </p>
               <p>
-                <Link to="#">Business</Link>
+                <Link to="/business" target="_blank">
+                  Business
+                </Link>
               </p>
               <p>
-                <Link to="#">Sustainabillity</Link>
+                <Link to="/sustainabillity" target="_blank">
+                  Sustainabillity
+                </Link>
               </p>
             </div>
             <div>
               <h5>Useful Links</h5>
               <p>
-                <Link to="#">Media</Link>
+                <Link to="/media" target="_blank">
+                  Media
+                </Link>
               </p>
               <p>
-                <Link to="#">Sponsorship</Link>
+                <Link to="/sponsorship" target="_blank">
+                  Sponsorship
+                </Link>
               </p>
               <p>
-                <Link to="#">Contact</Link>
+                <Link to="/contact" target="_blank">
+                  Contact
+                </Link>
               </p>
               <p>
-                <Link to="#">Sitemap</Link>
+                <Link to="sitemap" target="_blank">
+                  Sitemap
+                </Link>
               </p>
             </div>
             <div>
               <h5>Legal</h5>
               <p>
-                <Link to="#">Cookie Policy</Link>
+                <Link to="/cookiePolicy" target="_blank">
+                  Cookie Policy
+                </Link>
               </p>
               <p>
-                <Link to="#">Data Privacy</Link>
+                <Link to="/dataPrivacy" target="_blank">
+                  Data Privacy
+                </Link>
               </p>
               <p>
-                <Link to="#">Exclusion of Liabillty</Link>
+                <Link to="/exclusionOfLiabillty" target="_blank">
+                  Exclusion of Liabillty
+                </Link>
               </p>
               <p>
-                <Link to="#">Imprint</Link>
+                <Link to="/imprint" target="_blank">
+                  Imprint
+                </Link>
               </p>
             </div>
           </div>
@@ -106,6 +132,8 @@ const Footer = forwardRef((props, ref) => {
           </div>
         </div>
       </div>
+      {/* MODAL START */}
+      {/* MODAL END */}
       <div hidden className="footer_modal_div">
         <div className="footer_faXmark_div">
           <p></p>

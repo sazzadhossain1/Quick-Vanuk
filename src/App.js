@@ -11,6 +11,18 @@ import ContactUs from "./components/ContactUs/ContactUs";
 import Service from "./components/Service/Service";
 import ServiceInnerPage from "./components/ServiceInnerPage/ServiceInnerPage";
 import ServicePriceInnerPage from "./components/ServicePriceInnerPage/ServicePriceInnerPage";
+import News from "./components/News/News";
+import Career from "./components/Career/Career";
+import Business from "./components/Business/Business";
+import Sustainabillity from "./components/Sustainabillity/Sustainabillity";
+import Media from "./components/Media/Media";
+import Sponsorship from "./components/Sponsorship/Sponsorship";
+import Contact from "./components/Contact/Contact";
+import Sitemap from "./components/Sitemap/Sitemap";
+import CookiePolicy from "./components/CookiePolicy/CookiePolicy";
+import DataPrivacy from "./components/DataPrivacy/DataPrivacy";
+import ExclusionOfLiabillty from "./components/ExclusionOfLiabillty/ExclusionOfLiabillty";
+import Imprint from "./components/Imprint/Imprint";
 
 function App() {
   const router = createBrowserRouter([
@@ -61,6 +73,54 @@ function App() {
         {
           path: "/servicePriceInnerPage",
           element: <ServicePriceInnerPage></ServicePriceInnerPage>,
+        },
+        {
+          path: "/news",
+          element: <News></News>,
+        },
+        {
+          path: "/career",
+          element: <Career></Career>,
+        },
+        {
+          path: "/business",
+          element: <Business></Business>,
+        },
+        {
+          path: "/sustainabillity",
+          element: <Sustainabillity></Sustainabillity>,
+        },
+        {
+          path: "/media",
+          element: <Media></Media>,
+        },
+        {
+          path: "/sponsorship",
+          element: <Sponsorship></Sponsorship>,
+        },
+        {
+          path: "/contact",
+          element: <Contact></Contact>,
+        },
+        {
+          path: "/sitemap",
+          element: <Sitemap />,
+        },
+        {
+          path: "/cookiePolicy",
+          element: <CookiePolicy />,
+        },
+        {
+          path: "/dataPrivacy",
+          element: <DataPrivacy />,
+        },
+        {
+          path: "/exclusionOfLiabillty",
+          element: <ExclusionOfLiabillty />,
+        },
+        {
+          path: "/imprint",
+          element: <Imprint />,
         },
       ],
     },

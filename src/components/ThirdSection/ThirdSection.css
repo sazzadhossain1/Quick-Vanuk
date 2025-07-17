@@ -3,14 +3,16 @@
   margin-top: 50px;
   padding: 40px;
 }
+.third_section_moving {
+  margin-top: 20px;
+}
 .third_section_grid_div {
   display: flex;
-
   align-items: center;
   width: 75%;
   gap: 30px;
   margin: auto;
-  margin-top: 50px;
+  margin-top: 30px;
 }
 .third_section_img_div {
   /* background-color: red; */
@@ -28,6 +30,9 @@
 .third_number_text_flex_div {
   display: flex;
   gap: 10px;
+}
+.third_number_text_flex_div h2 {
+  margin-top: -2px;
 }
 .third_section_text_div {
   text-align: left;

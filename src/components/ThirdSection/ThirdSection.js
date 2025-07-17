@@ -6,8 +6,10 @@ import { Link } from "react-router-dom";
 const ThirdSection = () => {
   return (
     <div className="third_section_parent_div">
-      <h1>How does it work?</h1>
-      <h3>Moving made simple — in just a few easy steps:</h3>
+      <h1 className="third_section_how_does">How does it work?</h1>
+      <h3 className="third_section_moving">
+        Moving made simple — in just a few easy steps:
+      </h3>
       <div className="third_section_grid_div">
         <div className="third_section_img_div">
           <img

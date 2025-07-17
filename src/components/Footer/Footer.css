@@ -34,6 +34,10 @@
 
   width: 85%;
 }
+.footer_office {
+  line-height: 25px;
+}
+
 .footer_contact_div {
   display: flex;
 
