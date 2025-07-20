@@ -1,7 +1,7 @@
 import React from "react";
 import "./Pricing.css";
 
-import pricingPhoto from "../../accets/pricing/pricingPhoto.png";
+import pricingPhoto from "../../accets/pricing/pricingPhoto.jpg";
 
 const Pricing = () => {
   // For Safari

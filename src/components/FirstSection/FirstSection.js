@@ -5,7 +5,7 @@ import photoOne from "../../accets/FourthSectionPhoto/photoOne.webp";
 import photoTwo from "../../accets/FourthSectionPhoto/photoTwo.gif";
 import photoThree from "../../accets/FourthSectionPhoto/photoThree.gif";
 import photoFour from "../../accets/FourthSectionPhoto/photoFour.gif";
-import businessLogistics from "../../accets/FourthSectionPhoto/Business Logistics.png";
+import businessLogistics from "../../accets/FourthSectionPhoto/Business Logistics.jpg";
 
 const FirstSection = () => {
   return (
@@ -40,10 +40,10 @@ const FirstSection = () => {
               or a wholesaler? We’ll pick it up and deliver it safely to your
               door—fast.
             </p>
-            <p>
+            {/* <p>
               ❄ Specialized Frozen & Grocery Delivery Supporting local grocery
               businesses with reliable cold-chain transport.
-            </p>
+            </p> */}
             <p>
               📱 Easy Booking via Website Our platform is designed for instant
               quotes, live tracking, and cashless booking—a modern experience.
@@ -66,10 +66,10 @@ const FirstSection = () => {
               long-distance hauls, we cover wide areas with punctual and
               professional service.
             </p>
-            <p>
+            {/* <p>
               🌐 Perfect for Individuals & Businesses Alike Trusted by families,
               students, e-commerce sellers, corporate offices, and retailers.
-            </p>
+            </p> */}
             <p>
               🧑‍💼 Professional, Friendly Staff Trained movers and drivers who
               treat your belongings with the care they deserve.

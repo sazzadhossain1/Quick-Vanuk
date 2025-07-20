@@ -1,105 +1,99 @@
-import React from "react";
+import React, { useState } from "react";
 import faqs_photo from "../../accets/faqs/faqs_photo.png";
 import "./Faqs.css";
 
 const Faqs = () => {
-  // For Safari
-  document.body.scrollTop = 0;
-  // For Chrome, Firefox, IE and Opera
-  document.documentElement.scrollTop = 0;
+  const [openIndex, setOpenIndex] = useState(null);
+
+  const toggle = (index) => {
+    setOpenIndex(openIndex === index ? null : index);
+  };
+
+  const customerFaqs = [
+    {
+      question: "• How Do I Book A Van?",
+      answer: "Simply use our website.",
+    },
+    {
+      question: "• How Is Pricing Calculated?",
+      answer: "Based on distance, time, and van size.",
+    },
+    {
+      question: "• What If My Delivery Is Delayed?",
+      answer: "We notify you and provide updates.",
+    },
+    {
+      question: "• Do I Need To Help Load/Unload?",
+      answer: "Our drivers assist, but extra manpower can be added.",
+    },
+  ];
+
+  const driverFaqs = [
+    {
+      question: "• What Documents Do I Need?",
+      answer: "Driving license, insurance, vehicle registration.",
+    },
+    {
+      question: "• How Do I Get Paid?",
+      answer: "Weekly bank deposits based on completed trips.",
+    },
+  ];
+
   return (
     <div className="faqs_parent_div">
-      {/* <div className="faqs_customer_text_div">
-        <h2>Customers</h2>
-        <div>
-          <p>• How do I book a van? </p>
-          <p>Simply use our website.</p>
-        </div>
-
-        <div>
-          <p>• How is pricing calculated?</p>
-          <p>Based on distance, time, and van size.</p>
-        </div>
-
-        <div>
-          <p>• What if my delivery is delayed?</p>
-          <p> We notify you and provide updates.</p>
-        </div>
-
-        <div>
-          <p>• Do I need to help load/unload?</p>
-          <p> Our drivers assist, but extra manpower can be added.</p>
-        </div>
-      </div>
-      <div className="faqs_drivers_text_div">
-        <h2>Drivers</h2>
-        <div>
-          <p>• What documents do I need?</p>
-          <p> Driving license, insurance, vehicle registration.</p>
-        </div>
-        <div>
-          <p>• How do I get paid?</p>
-          <p>Weekly bank deposits based on completed trips.</p>
-        </div>
-      </div> */}
-
       <div className="faqs_grid_div">
         <div className="faqs_question_div">
           <div>
             <h2>Customers</h2>
-            <div>
-              <select name="" id="">
-                <option value="">• How do I book a van?</option>
-                <option value="">Simply use our website.</option>
-              </select>
-
-              <br />
-
-              <select name="" id="">
-                <option value="">• How is pricing calculated?</option>
-                <option value="">Based on distance, time, and van size</option>
-              </select>
-
-              <br />
-
-              <select name="" id="">
-                <option value="">• What if my delivery is delayed?</option>
-                <option value="">We notify you and provide updates.</option>
-              </select>
-
-              <br />
-
-              <select name="" id="">
-                <option value="">• Do I need to help load/unload?</option>
-                <option value="">
-                  Our drivers assist, but extra manpower can be added.
-                </option>
-              </select>
-            </div>
+            {customerFaqs.map((faq, index) => (
+              <div
+                key={index}
+                className={`faq_box ${openIndex === index ? "open" : ""}`}
+                onClick={() => toggle(index)}
+              >
+                <div className="faq_header">
+                  <p className="faq_question">{faq.question}</p>
+                  <span
+                    className={`arrow ${openIndex === index ? "rotate" : ""}`}
+                  >
+                    ▼
+                  </span>
+                </div>
+                {openIndex === index && (
+                  <p className="faq_answer">{faq.answer}</p>
+                )}
+              </div>
+            ))}
           </div>
+
           <div>
             <h2>Drivers</h2>
-            <div>
-              <select name="" id="">
-                <option value="">• What documents do I need?</option>
-                <option value="">
-                  Driving license, insurance, vehicle registration.
-                </option>
-              </select>
-
-              <br />
-
-              <select name="" id="">
-                <option value="">• How do I get paid?</option>
-                <option value="">
-                  Weekly bank deposits based on completed trips.
-                </option>
-              </select>
-            </div>
+            {driverFaqs.map((faq, index) => (
+              <div
+                key={index + 100}
+                className={`faq_box ${openIndex === index + 100 ? "open" : ""}`}
+                onClick={() => toggle(index + 100)}
+              >
+                <div className="faq_header">
+                  <p className="faq_question">{faq.question}</p>
+                  <span
+                    className={`arrow ${
+                      openIndex === index + 100 ? "rotate" : ""
+                    }`}
+                  >
+                    ▼
+                  </span>
+                </div>
+                {openIndex === index + 100 && (
+                  <p className="faq_answer">{faq.answer}</p>
+                )}
+              </div>
+            ))}
           </div>
         </div>
+
         <div className="faqs_photo_div">
-          <img src={faqs_photo} alt="" />
+          <img src={faqs_photo} alt="FAQs" />
         </div>
       </div>
     </div>

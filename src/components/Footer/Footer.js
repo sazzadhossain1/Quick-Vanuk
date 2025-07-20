@@ -105,11 +105,11 @@ const Footer = forwardRef((props, ref) => {
                   Exclusion of Liabillty
                 </Link>
               </p>
-              <p>
+              {/* <p>
                 <Link to="/imprint" target="_blank">
                   Imprint
                 </Link>
-              </p>
+              </p> */}
             </div>
           </div>
         </div>
