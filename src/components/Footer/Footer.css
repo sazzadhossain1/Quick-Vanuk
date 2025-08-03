@@ -107,22 +107,56 @@
 }
 
 /* MODAL START */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .footer_modal_div {
-  width: 40%;
+  max-width: 600px;
+  width: 90%;
   margin: auto;
   background-color: white;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   padding: 20px;
-  margin-top: -600px;
+
+  z-index: 2000;
   position: relative;
-  z-index: 1;
+
+  border-radius: 8px;
+}
+.modal_text_div {
+  text-align: left;
+}
+.modal_text_div h4 {
+  margin-bottom: 1rem;
+  font-size: 1.4rem;
+}
+.modal_text_div p {
+  margin-bottom: 0.75rem;
+  line-height: 1.6;
 }
 .footer_faXmark_div {
   display: flex;
   justify-content: space-between;
+
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  cursor: pointer;
 }
 .footer_faXmark {
   cursor: pointer;
+
+  font-size: 1.5rem;
+  color: #333;
 }
 
 /* MODAL END */
