@@ -18,7 +18,7 @@ const Footer = forwardRef((props, ref) => {
             <div className="footer_quick_contact_div">
               <div className="footer_flex_div">
                 <p>📞</p>
-                <p>Phone: +447421492922</p>
+                <p>Phone: +44 7352 622216</p>
               </div>
 
               <div className="footer_flex_div">
@@ -44,11 +44,11 @@ const Footer = forwardRef((props, ref) => {
           <div className="footer_three_cart_parent_div">
             <div>
               <h5>Comany</h5>
-              <p>
+              {/* <p>
                 <Link to="news" target="_blank">
                   News
                 </Link>
-              </p>
+              </p> */}
               <p>
                 <Link to="/career" target="_blank">
                   Career
@@ -105,11 +105,6 @@ const Footer = forwardRef((props, ref) => {
                   Exclusion of Liabillty
                 </Link>
               </p>
-              {/* <p>
-                <Link to="/imprint" target="_blank">
-                  Imprint
-                </Link>
-              </p> */}
             </div>
           </div>
         </div>
@@ -120,12 +115,12 @@ const Footer = forwardRef((props, ref) => {
               <small>© QuickvanUK. All rights reserved.</small>
             </div>
             <div className="footer_logo_container">
-              <p className="footer_logo">
-                Quick<span>VANUK</span>
-              </p>
+              <p className="footer_logo">QUICKVANUK</p>
             </div>
             <div className="footer_icon_div">
-              <FontAwesomeIcon className="icon_one" icon={faFacebook} />
+              <Link to={"https://www.facebook.com/quickvanuk/"} target="_blank">
+                <FontAwesomeIcon className="icon_one" icon={faFacebook} />
+              </Link>
               <FontAwesomeIcon className="icon_two" icon={faLinkedin} />
               <FontAwesomeIcon className="icon_three" icon={faYoutube} />
             </div>

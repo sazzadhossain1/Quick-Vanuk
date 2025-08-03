@@ -21,6 +21,11 @@ const Pricing = () => {
             Discounts & Promotions – Special rates for returning customers and
             bulk bookings.
           </p>
+          <div className="fifthSection_contact_us_today_div pricint_contact_us_div">
+            <p>Contct Us Today</p>
+            <p>📞 Phone: +447421492922</p>
+            <p>📧 Email: info@quickvanuk.com</p>
+          </div>
         </div>
       </div>
     </div>

@@ -29,12 +29,12 @@ const FirstSection = () => {
               with on-demand logistics—so you don’t need multiple providers.
             </p>
 
-            <p>
+            {/* <p>
               {" "}
               📦 Residential & Commercial Moves Whether you're shifting homes,
               relocating your office, or moving out as a student—we’ve got
               tailored solutions to match every need.
-            </p>
+            </p> */}
             <p>
               🛒 Store Pickup & B2B Deliveries Order something from IKEA, B&Q,
               or a wholesaler? We’ll pick it up and deliver it safely to your
@@ -61,11 +61,11 @@ const FirstSection = () => {
               disassembly, and even waste removal available—saving you stress
               and time.
             </p>
-            <p>
+            {/* <p>
               📍 Serving Luton, London & Beyond From local trips to
               long-distance hauls, we cover wide areas with punctual and
               professional service.
-            </p>
+            </p> */}
             {/* <p>
               🌐 Perfect for Individuals & Businesses Alike Trusted by families,
               students, e-commerce sellers, corporate offices, and retailers.
@@ -74,10 +74,10 @@ const FirstSection = () => {
               🧑‍💼 Professional, Friendly Staff Trained movers and drivers who
               treat your belongings with the care they deserve.
             </p>
-            <p>
+            {/* <p>
               🤝 Trustworthy & Reliable Our brand is built on punctuality,
               professionalism, and peace of mind for you.
-            </p>
+            </p> */}
             <p>
               📣 "Making Every Move Hassle-Free" We truly live our slogan—with
               tech, people, and service designed to make moving stress-free.

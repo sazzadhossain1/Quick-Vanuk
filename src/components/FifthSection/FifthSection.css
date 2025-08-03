@@ -24,6 +24,11 @@
   margin-top: 15px;
   line-height: 28px;
 }
+.fifthSection_contact_us_today_div {
+  background-color: #00478f;
+  color: white;
+  padding: 20px;
+}
 .fifthSection_text_div h1 {
   margin-bottom: 10px;
 }
@@ -50,7 +55,12 @@
     padding: 20px;
   }
 }
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 1024px) {
+  .fifthSection_parent_div {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 779px) {
   .fifthSection_parent_div {
     flex-direction: column-reverse;
   }

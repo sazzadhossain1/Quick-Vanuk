@@ -80,7 +80,7 @@
 }
 @media screen and (max-width: 1536px) {
   .third_section_grid_div {
-    width: 70%;
+    width: 75%;
     gap: 40px;
   }
 }

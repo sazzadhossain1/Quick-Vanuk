@@ -103,7 +103,7 @@ const NavigationBar = ({ scrollToFooter }) => {
                 <Link to="/aboutUs">About Us</Link>
               </li>
               <li>
-                <Link to="/becomeADriver"> Become a Driver</Link>
+                <Link to="/becomeADriver">Become a Driver</Link>
               </li>
               <li>
                 <Link to="/faqs"> FAQs</Link>

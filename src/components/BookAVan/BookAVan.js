@@ -36,7 +36,7 @@ const BookAVan = () => {
       </div>
       <div className="book_a_van_parent_div">
         <div className="book_a_van_form_div">
-          <h1>Book A Van</h1>
+          <h1>Book a Van</h1>
           <form ref={form} onSubmit={sendEmail}>
             <div className="form_control">
               <label className="label">

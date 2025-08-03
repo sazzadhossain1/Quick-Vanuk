@@ -19,6 +19,9 @@
 .pricing_text_div {
   text-align: left;
 }
+.pricint_contact_us_div {
+  margin-top: 15px;
+}
 .pricing_text_div p {
   line-height: 30px;
 }

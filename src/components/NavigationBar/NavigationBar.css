@@ -2,7 +2,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  text-transform: capitalize;
   text-decoration: none;
 }
 header {
@@ -11,7 +10,7 @@ header {
   left: 0;
   right: 0;
   background-color: white;
-  /* border-bottom: 1px solid #00a0d7; */
+
   box-shadow: 0 0 50px 0 rgba(127, 222, 253, 0.35);
   padding: 0px 2%;
   display: flex;
@@ -19,15 +18,12 @@ header {
   justify-content: space-between;
   z-index: 1000;
 }
-/* .quickVanuk {
-  color: #ff671d;
-} */
+
 .logo {
   height: 40px;
   width: 100%;
 
   object-fit: contain;
-  /* background-color: red; */
 }
 header .navbar ul {
   display: flex;
@@ -37,9 +33,6 @@ header .navbar ul li {
   list-style: none;
   position: relative;
   float: left;
-}
-.li_div {
-  /* background-color: red; */
 }
 
 header .navbar ul li a {
@@ -91,18 +84,17 @@ header label {
   align-items: center;
   margin-left: 230px;
 }
-.nav_fle_div a {
-  text-transform: lowercase;
-}
+
 .faEnvelope {
   color: white;
-  /* background-color: #f17732; */
+
   background-color: #00a0d7;
   padding: 5px;
   border-radius: 50%;
   font-size: 10px;
   margin-right: -10px;
 }
+
 @media screen and (max-width: 1536px) {
   .nav_fle_div {
     display: flex;

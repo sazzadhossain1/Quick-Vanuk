@@ -19,13 +19,16 @@ const FifthSection = () => {
                 QuickVanUK.com
               </Link>
               , we believe in fair, upfront pricing — tailored to your exact
-              needs. Whether you’re moving a single sofa or a full house, our
-              flexible pricing options ensure you only pay for what you use.
+              needs. Whether you’re moving a single sofa or <span>a</span> full
+              house, our flexible pricing options ensure you only pay for what
+              you use.
             </p>
           </div>
-          <Link>
-            <button>Contact Us Today</button>
-          </Link>
+          <div className="fifthSection_contact_us_today_div">
+            <p>Contct Us Today</p>
+            <p>📞 Phone: +447421492922</p>
+            <p>📧 Email: info@quickvanuk.com</p>
+          </div>
         </div>
 
         <div className="fifthSectionPhoto_div">
