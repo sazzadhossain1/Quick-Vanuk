@@ -47,6 +47,7 @@
 .faq_question {
   font-weight: bold;
   margin: 0;
+  margin-left: 15px;
 }
 
 .faq_answer {
@@ -58,10 +59,12 @@
 .arrow {
   font-size: 16px;
   transition: transform 0.3s ease;
+  margin-left: -20px;
 }
 
 .arrow.rotate {
   transform: rotate(180deg);
+  margin-top: -25px;
 }
 
 /* ==================xxxxxxxxxxxxxx====================== */
@@ -101,6 +104,11 @@
   }
 
   .faqs_photo_div img {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 402px) {
+  .faqs_grid_div {
     width: 100%;
   }
 }
