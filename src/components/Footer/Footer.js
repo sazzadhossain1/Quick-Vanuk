@@ -164,7 +164,7 @@ const Footer = forwardRef((props, ref) => {
                   Sponsorship quickvanuk.com
                 </Link>
               </p>
-              <p>
+              {/* <p>
                 <Link to="/contact" target="_blank">
                   Contact
                 </Link>
@@ -173,7 +173,7 @@ const Footer = forwardRef((props, ref) => {
                 <Link to="/sitemap" target="_blank">
                   Sitemap
                 </Link>
-              </p>
+              </p> */}
             </div>
             <div>
               <h5>Legal</h5>
