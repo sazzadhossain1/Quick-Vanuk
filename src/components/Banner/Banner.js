@@ -161,8 +161,8 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 import bannerOne from "../../accets/banner/bannerOne.jpg";
-import bannerTwo from "../../accets/banner/bannerPhotoTwo.jpg";
-import bannerThree from "../../accets/banner/bannerPhoto.jpg";
+import bannerTwo from "../../accets/banner/bannerTwo.jpg";
+import bannerThree from "../../accets/banner/bannerThree.jpg";
 const Banner = () => {
   const settings = {
     dots: true, // Show navigation dots
@@ -178,8 +178,8 @@ const Banner = () => {
 
   const photos = [
     { id: 1, url: bannerOne },
-    // { id: 2, url: bannerTwo },
-    // { id: 3, url: bannerThree },
+    { id: 2, url: bannerTwo },
+    { id: 3, url: bannerThree },
   ];
   return (
     <div className="carousel-container">
@@ -201,7 +201,7 @@ const Banner = () => {
 const SampleNextArrow = (props) => {
   const { onClick } = props;
   return (
-    <div className="arrow next" onClick={onClick}>
+    <div className="banner_arrow next" onClick={onClick}>
       ❯
     </div>
   );
@@ -211,7 +211,7 @@ const SampleNextArrow = (props) => {
 const SamplePrevArrow = (props) => {
   const { onClick } = props;
   return (
-    <div className="arrow prev" onClick={onClick}>
+    <div className="banner_arrow prev" onClick={onClick}>
       ❮
     </div>
   );

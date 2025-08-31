@@ -209,8 +209,8 @@ const Footer = forwardRef((props, ref) => {
               <Link to="https://www.facebook.com/quickvanuk/" target="_blank">
                 <FontAwesomeIcon className="icon_one" icon={faFacebook} />
               </Link>
-              <FontAwesomeIcon className="icon_two" icon={faLinkedin} />
-              <FontAwesomeIcon className="icon_three" icon={faYoutube} />
+              {/* <FontAwesomeIcon className="icon_two" icon={faLinkedin} /> */}
+              {/* <FontAwesomeIcon className="icon_three" icon={faYoutube} /> */}
             </div>
           </div>
         </div>

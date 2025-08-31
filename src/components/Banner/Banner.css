@@ -62,7 +62,7 @@
   /* border-radius: 8px; */
 }
 
-.arrow {
+.banner_arrow {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -72,7 +72,7 @@
   font-size: 24px;
 }
 
-.arrow.prev {
+.banner_arrow.prev {
   left: 20px;
   font-size: 24px;
   background: rgba(0, 0, 0, 0.5);
@@ -81,7 +81,7 @@
   border-radius: 50%;
 }
 
-.arrow.next {
+.banner_arrow.next {
   font-size: 24px;
   right: 20px;
 
