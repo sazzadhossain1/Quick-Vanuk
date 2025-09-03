@@ -6,6 +6,7 @@ import sameDayDeliveryService from "../../accets/service_photos/sameDayDeliveryS
 import BusinessLogistics from "../../accets/service_photos/BusinessLogistics.jpeg";
 import FurnitureAndAppliance from "../../accets/service_photos/FurnitureAndAppliance Transport.jpg";
 import StorePickupAndDelivery from "../../accets/service_photos/storePickupDelivery.webp";
+import singleItemsFinal from "../../accets/service_photos/single items final.jpg";
 import { Link } from "react-router-dom";
 
 const Service = () => {
@@ -60,7 +61,7 @@ const Service = () => {
           </Link> */}
         </div>
         <div className="service_cart_div">
-          <img className="service_photo" src={FurnitureAndAppliance} alt="" />
+          <img className="service_photo" src={singleItemsFinal} alt="" />
           <div>
             <h2>Furniture & Appliance Transport</h2>
             <p>
