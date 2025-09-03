@@ -10,7 +10,7 @@ import businessLogistics from "../../accets/FourthSectionPhoto/Business Logistic
 const FirstSection = () => {
   return (
     <div>
-      <h1 className="why_choose_title">Why choose QuickvanUK?</h1>
+      <h1 className="why_choose_title">Why choose QuickVanUK?</h1>
       <div className="fourth_section_grid_div">
         <div className="photoOne_div">
           <img

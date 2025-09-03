@@ -163,6 +163,7 @@ import "slick-carousel/slick/slick-theme.css";
 import bannerOne from "../../accets/banner/bannerOne.jpg";
 import bannerTwo from "../../accets/banner/bannerTwo.jpg";
 import bannerThree from "../../accets/banner/bannerThree.jpg";
+import { Link } from "react-router-dom";
 const Banner = () => {
   const settings = {
     dots: true, // Show navigation dots
@@ -185,12 +186,52 @@ const Banner = () => {
     <div className="carousel-container">
       <Slider {...settings}>
         {photos.map((photo) => (
-          <div key={photo.id}>
+          <div className="banner_carousel_div" key={photo.id}>
             <img
               src={photo.url}
               alt={`Slide ${photo.id}`}
               className="carousel-image"
             />
+            <div className="banner_form_grid_div">
+              <div className="banner_frorm_text_child_div">
+                <h2>
+                  Get the best Man and Van provider for your move today! Free
+                  Man and Van Quotes and Instant Online Booking.
+                </h2>
+                <p>Our trusted Man and Van Drivers cover the Entire UK.</p>
+                <Link>
+                  <button className="banner_form_button">
+                    GET FREE QUOTES
+                  </button>
+                </Link>
+              </div>
+
+              <div className="banner_form_child_div">
+                <form action="">
+                  <h2>QuickVanUk</h2>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Cupiditate, pariatur. Vel nostrum alias suscipit animi
+                    praesentium recusandae laboriosam, doloribus qui!
+                  </p>
+                  <label htmlFor="">Collection address</label>
+                  <br />
+                  <input type="text" />
+
+                  <br />
+
+                  <label htmlFor="">Delivery address</label>
+                  <br />
+                  <input type="text" />
+                  <br />
+                  <Link>
+                    <button className="banner_form_Submit_button">
+                      Submit
+                    </button>
+                  </Link>
+                </form>
+              </div>
+            </div>
           </div>
         ))}
       </Slider>
