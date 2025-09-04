@@ -183,6 +183,11 @@
     text-align: left;
   }
 }
+@media screen and (max-width: 1405px) {
+  .footer_grit_div {
+    width: 80%;
+  }
+}
 @media screen and (max-width: 1200px) {
   .footer_grit_div {
     width: 90%;
