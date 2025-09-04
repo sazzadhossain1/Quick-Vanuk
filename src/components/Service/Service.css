@@ -44,12 +44,12 @@
   width: 100%;
   padding: 20px;
   border: none;
-
+  background-color: deepskyblue;
   font-size: 18px;
+  color: white;
 }
 .service_read_btn:hover {
-  background-color: rgb(1, 138, 202);
-  color: white;
+  background-color: rgb(3, 166, 221);
 }
 
 @media screen and (max-width: 1103px) {

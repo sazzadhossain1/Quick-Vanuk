@@ -1,17 +1,11 @@
 import React from "react";
 import "./SecondSection.css";
 
-// import photoOne from "../../accets/secondSectionPhoto/secondPhotoOne.webp";
-// import photoTwo from "../../accets/secondSectionPhoto/secondPhotoTwo.webp";
-// import photoThree from "../../accets/secondSectionPhoto/secondPhotoThird.webp";
-// import photoFour from "../../accets/secondSectionPhoto/secondPhotoFour.webp";
-// import photoFive from "../../accets/secondSectionPhoto/secondPhotoFive.webp";
+import HouseRemovalFinal from "../../accets/secondSectionPhoto/House removal final.jpg";
+import officeRemovalFinal from "../../accets/secondSectionPhoto/office removal final.jpg";
 
-import SmallItems from "../../accets/secondSectionPhoto/SmallItems-removebg-preview.png";
-import LargeAndBulkyGoods from "../../accets/secondSectionPhoto/Large and bulky goods.png";
-import ValuablesAndDelicateGoods from "../../accets/secondSectionPhoto/Valuables and delicate goods.png";
-import MovingService from "../../accets/secondSectionPhoto/Moving service.png";
-import FoodAndGroceryDelivery from "../../accets/secondSectionPhoto/Food & grocery delivery.png";
+import singleItemsFinal from "../../accets/secondSectionPhoto/single items final.jpg";
+
 import { Link } from "react-router-dom";
 
 const SecondSection = () => {
@@ -44,53 +38,58 @@ const SecondSection = () => {
 
       <div>
         <div className="second_section_flex_div">
-          <img src={MovingService} alt="" />
+          <img src={HouseRemovalFinal} alt="" />
           <div className="second_section_text_div">
-            <h3>Moving service</h3>
+            <h3>House Removals</h3>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo
-              cupiditate molestias recusandae, tempore ipsum adipisci voluptatum
-              repudiandae atque officia iusto odit alias eum amet corporis
-              laudantium nihil porro ex, vitae perferendis doloremque! Aut, vero
-              culpa. Fugiat voluptatem, minus facere ea consectetur expedita
-              iusto sed, nam voluptates quasi neque libero inventore?
+              Moving house doesn’t have to be stressful. QuickVanUK makes
+              household removals simple with trained movers, secure vans, and
+              hassle-free booking. From small flats to family homes, we’ll
+              transport your furniture, appliances, and personal belongings
+              safely and on time—so you can settle into your new home without
+              worry.
             </p>
             <Link className="second_section_button_link">
-              <button className="second_section_button">GET FREE QUOTES</button>
+              <button className="second_section_button">
+                GET FREE A QUOTES
+              </button>
             </Link>
           </div>
         </div>
         <div className="second_section_flex_div">
-          <img src={SmallItems} alt="" />
+          <img src={officeRemovalFinal} alt="" />
           <div className="second_section_text_div">
-            <h3>Small Items</h3>
+            <h3>Office Removals</h3>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo
-              cupiditate molestias recusandae, tempore ipsum adipisci voluptatum
-              repudiandae atque officia iusto odit alias eum amet corporis
-              laudantium nihil porro ex, vitae perferendis doloremque! Aut, vero
-              culpa. Fugiat voluptatem, minus facere ea consectetur expedita
-              iusto sed, nam voluptates quasi neque libero inventore?
+              Relocating your office? QuickVanUK provides a smooth transition
+              with minimal downtime. We handle office furniture, electronics,
+              and files with expert care, ensuring your business is up and
+              running quickly. With flexible scheduling and professional movers,
+              we make office removals efficient, secure, and stress-free for
+              companies of all sizes.
             </p>
             <Link className="second_section_button_link">
-              <button className="second_section_button">GET FREE QUOTES</button>
+              <button className="second_section_button">
+                GET FREE A QUOTES
+              </button>
             </Link>
           </div>
         </div>
         <div className="second_section_flex_div">
-          <img src={LargeAndBulkyGoods} alt="" />
+          <img src={singleItemsFinal} alt="" />
           <div className="second_section_text_div">
-            <h3>Large and bulky goods</h3>
+            <h3>Single Items</h3>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo
-              cupiditate molestias recusandae, tempore ipsum adipisci voluptatum
-              repudiandae atque officia iusto odit alias eum amet corporis
-              laudantium nihil porro ex, vitae perferendis doloremque! Aut, vero
-              culpa. Fugiat voluptatem, minus facere ea consectetur expedita
-              iusto sed, nam voluptates quasi neque libero inventore?
+              Need just one thing moved? QuickVanUK is perfect for single-item
+              deliveries. Whether it’s a sofa, fridge, or bulky furniture, our
+              man-and-van service ensures safe pickup and drop-off. Ideal for
+              online purchases, store collections, or gifts—no job is too small
+              when it comes to reliable moving.
             </p>
             <Link className="second_section_button_link">
-              <button className="second_section_button">GET FREE QUOTES</button>
+              <button className="second_section_button">
+                GET FREE A QUOTES
+              </button>
             </Link>
           </div>
         </div>
