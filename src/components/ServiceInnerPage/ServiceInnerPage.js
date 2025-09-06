@@ -1,13 +1,13 @@
 import React from "react";
 import "./ServiceInnerPage.css";
-import bannerPhoto from "../../accets/banner/bannerPhoto.jpg";
+// import bannerPhoto from "../../accets/banner/bannerPhoto.jpg";
 import { Link } from "react-router-dom";
 
 const ServiceInnerPage = () => {
   return (
     <div className="serviceInnerPage_parent_div">
       <div className="serviceInnerPage_content_div">
-        <img className="service_inner_page_photo" src={bannerPhoto} alt="" />
+        {/* <img className="service_inner_page_photo" src={bannerPhoto} alt="" /> */}
         <h3>Lorem ipsum dolor sit amet</h3>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi

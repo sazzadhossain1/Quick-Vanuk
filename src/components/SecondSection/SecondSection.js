@@ -51,7 +51,7 @@ const SecondSection = () => {
             </p>
             <Link className="second_section_button_link">
               <button className="second_section_button">
-                GET FREE A QUOTES
+                Get a Free Quote
               </button>
             </Link>
           </div>
@@ -70,7 +70,7 @@ const SecondSection = () => {
             </p>
             <Link className="second_section_button_link">
               <button className="second_section_button">
-                GET FREE A QUOTES
+                Get a Free Quote
               </button>
             </Link>
           </div>
@@ -88,7 +88,7 @@ const SecondSection = () => {
             </p>
             <Link className="second_section_button_link">
               <button className="second_section_button">
-                GET FREE A QUOTES
+                Get a Free Quote
               </button>
             </Link>
           </div>

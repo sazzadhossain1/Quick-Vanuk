@@ -1,6 +1,6 @@
 import React, { useRef, useState } from "react";
 import "./ServicePriceInnerPage.css";
-import photo from "../../accets/banner/bannerPhoto.jpg";
+// import photo from "../../accets/banner/bannerPhoto.jpg";
 import servicePriceCartPhoto from "../../accets/servicePriceInnerPage/servicePriceCartPhoto.png";
 import { Link } from "react-router-dom";
 import emailjs from "@emailjs/browser";
@@ -55,7 +55,7 @@ const ServicePriceInnerPage = () => {
   return (
     <div className="servicePrice_innerPage_parent_div" id="blur-wrapper">
       <div className="servicePrice_innterPage_flex_div">
-        <img className="servicePrice_innerPage_img" src={photo} alt="" />
+        {/* <img className="servicePrice_innerPage_img" src={photo} alt="" /> */}
         <div className="servicePrice_innerPage_text_div">
           <h3>Lorem ipsum dolor sit amet consectetur.</h3>
           <p>
