@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "./Banner.css";
 
 import Slider from "react-slick";
@@ -11,6 +11,8 @@ import bannerThree from "../../accets/banner/bannerThree.jpg";
 import { Link } from "react-router-dom";
 
 const Banner = () => {
+  const [status, setStatus] = useState("");
+
   const settings = {
     dots: true,
     infinite: true,
@@ -47,11 +49,37 @@ const Banner = () => {
     },
   ];
 
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    const form = e.target;
+    const data = new FormData(form);
+
+    const response = await fetch("https://formspree.io/f/mandajvv", {
+      method: "POST",
+      body: data,
+      headers: { Accept: "application/json" },
+    });
+
+    if (response.ok) {
+      setStatus("SUCCESS");
+      form.reset();
+    } else {
+      setStatus("ERROR");
+    }
+  };
+
+  // Auto-hide success/error message after 30 seconds
+  useEffect(() => {
+    if (status) {
+      const timer = setTimeout(() => setStatus(""), 30000); // 30s
+      return () => clearTimeout(timer);
+    }
+  }, [status]);
+
   return (
     <div className="carousel-container">
       <Slider {...settings}>
         {photos.map((photo) => {
-          // Match text for this slide
           const matchedText = bannerText.find((item) => item.id === photo.id);
 
           return (
@@ -80,29 +108,45 @@ const Banner = () => {
 
                 {/* Form */}
                 <div className="banner_form_child_div">
-                  <form action="">
+                  <form onSubmit={handleSubmit}>
                     <h2>QuickVanUK Quotes</h2>
-                    <p>Get a Free Quote for QuickVanUK service</p>
+                    <p>Get a Free Quote for QuickVanUK service</p>
+
                     <label>Name</label>
                     <br />
-                    <input type="text" />
+                    <input type="text" name="name" required />
                     <br />
 
                     <label>Contact number</label>
                     <br />
-                    <input type="text" />
-                    <label>Delivery address</label>
+                    <input type="text" name="contact" required />
                     <br />
-                    <input type="text" />
-                    <label>Delivery address</label>
+
+                    <label>Collection Address</label>
                     <br />
-                    <input type="text" />
+                    <input type="text" name="collection" required />
                     <br />
-                    <Link>
-                      <button className="banner_form_Submit_button">
-                        Submit
-                      </button>
-                    </Link>
+
+                    <label>Delivery Address</label>
+                    <br />
+                    <input type="text" name="delivery" required />
+                    <br />
+
+                    <button type="submit" className="banner_form_Submit_button">
+                      Submit
+                    </button>
+
+                    {/* Success/Error Messages */}
+                    {status === "SUCCESS" && (
+                      <p style={{ color: "green", marginTop: "10px" }}>
+                        ✅ Your quote request has been sent!
+                      </p>
+                    )}
+                    {status === "ERROR" && (
+                      <p style={{ color: "red", marginTop: "10px" }}>
+                        ❌ Oops! Something went wrong. Try again.
+                      </p>
+                    )}
                   </form>
                 </div>
               </div>
