@@ -8,4 +8,8 @@
   right: 30px;
   bottom: 50px;
   cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 100%;
+  padding: 10px;
+  background-color: white;
 }

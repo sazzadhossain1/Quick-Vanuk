@@ -12,7 +12,7 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 50px;
-  /* align-items: center; */
+
   position: absolute;
   bottom: 15%;
   left: 20%;
@@ -20,7 +20,6 @@
   margin: auto;
 }
 .banner_frorm_text_child_div {
-  /* background-color: rgba(0, 0, 0, 0.575); */
   text-align: left;
 }
 .banner_frorm_text_child_div h2 {
@@ -63,7 +62,6 @@
   margin-bottom: 20px;
 }
 .banner_form_child_div p {
-  /* font-size: 30px; */
   margin-bottom: 10px;
 }
 .banner_form_child_div input {
@@ -80,11 +78,8 @@
 .carousel-image {
   width: 100%;
   height: 760px;
-  margin: auto;
+  object-fit: cover;
   display: block;
-
-  /* object-fit: scale-down; */
-  /* border-radius: 8px; */
 }
 .image-overlay {
   position: absolute;
@@ -92,8 +87,8 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.4); /* Darker background */
-  pointer-events: none; /* lets clicks pass through */
+  background: rgba(0, 0, 0, 0.4);
+  pointer-events: none;
 }
 .banner_arrow {
   position: absolute;
@@ -127,7 +122,7 @@
 @media screen and (max-width: 1536px) {
   .banner_form_grid_div {
     bottom: 30%;
-    /* left: 20%; */
+
     width: 80%;
     gap: 0;
   }
@@ -171,8 +166,6 @@
     margin: auto;
     height: 550px;
     object-fit: cover;
-
-    /* border-radius: 8px; */
   }
   .arrow {
     padding: 8px;
