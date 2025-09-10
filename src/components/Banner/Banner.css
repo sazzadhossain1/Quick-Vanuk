@@ -134,8 +134,8 @@
 }
 @media screen and (max-width: 1455px) {
   .banner_form_grid_div {
-    left: 15%;
-    width: 70%;
+    left: 10%;
+    width: 90%;
     gap: 0;
   }
 }

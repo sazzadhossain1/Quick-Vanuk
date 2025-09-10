@@ -1,0 +1,11 @@
+.main_parent_div {
+  position: relative;
+}
+.whatsapp_icon {
+  position: fixed;
+  color: green;
+  font-size: 50px;
+  right: 30px;
+  bottom: 50px;
+  cursor: pointer;
+}
