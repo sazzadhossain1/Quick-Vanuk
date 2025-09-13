@@ -126,6 +126,10 @@
     width: 80%;
     gap: 0;
   }
+  .carousel-image {
+    /* height: auto; */
+    /* object-fit: contain; */
+  }
 }
 @media screen and (max-width: 1455px) {
   .banner_form_grid_div {

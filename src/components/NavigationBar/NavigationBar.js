@@ -3,9 +3,10 @@ import "./NavigationBar.css";
 import { Link } from "react-router-dom";
 // import logo from "../../accets/Logo/logo.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBars } from "@fortawesome/free-solid-svg-icons";
+import { faBars, faEnvelope } from "@fortawesome/free-solid-svg-icons";
 // import logo from "../../accets/logo/Logo PNG.png";
 import logo from "../../accets/logo/Logo final png 0.png";
+import { faWhatsapp } from "@fortawesome/free-brands-svg-icons";
 
 const NavigationBar = ({ scrollToFooter }) => {
   return (
@@ -21,6 +22,22 @@ const NavigationBar = ({ scrollToFooter }) => {
         </label>
 
         <nav className="navbar">
+          <div className="nav_contact_up_div">
+            <span className="nav_envelop_span">
+              <FontAwesomeIcon className="nav_faEnvelope" icon={faEnvelope} />
+              <span>info@quickvanuk.com</span>
+            </span>
+            <a
+              href="https://wa.me/447352622216" // replace with your WhatsApp number
+              target="_blank"
+              rel="noopener noreferrer"
+              className="nav_whatsapp_a"
+            >
+              <FontAwesomeIcon className="nav_faWhatsapp" icon={faWhatsapp} />
+              <span>+44 7352 622216</span>
+            </a>
+          </div>
+          <div className="nav_blank_div"></div>
           <ul>
             <div className="li_div">
               <li className="photo_gallery">

@@ -5,6 +5,12 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
+// import bannerOne from "../../accets/banner/a.png";
+// import bannerTwo from "../../accets/banner/aa.png";
+// import bannerThree from "../../accets/banner/aaa.png";
+// import bannerOne from "../../accets/banner/o.jpg";
+// import bannerTwo from "../../accets/banner/t.jpg";
+// import bannerThree from "../../accets/banner/th.jpg";
 import bannerOne from "../../accets/banner/bannerOne.jpg";
 import bannerTwo from "../../accets/banner/bannerTwo.jpg";
 import bannerThree from "../../accets/banner/bannerThree.jpg";
@@ -139,7 +145,8 @@ const Banner = () => {
                     {/* Success/Error Messages */}
                     {status === "SUCCESS" && (
                       <p style={{ color: "green", marginTop: "10px" }}>
-                        ✅ Your quote request has been sent!
+                        ✅ Thank you for your submission. We will get back to
+                        you shortly.
                       </p>
                     )}
                     {status === "ERROR" && (
