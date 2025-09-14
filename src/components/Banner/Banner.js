@@ -15,9 +15,14 @@ import bannerOne from "../../accets/banner/bannerOne.jpg";
 import bannerTwo from "../../accets/banner/bannerTwo.jpg";
 import bannerThree from "../../accets/banner/bannerThree.jpg";
 import { Link } from "react-router-dom";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faXmark } from "@fortawesome/free-solid-svg-icons";
 
 const Banner = () => {
   const [status, setStatus] = useState("");
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const openModal = () => setIsModalOpen(true);
+  const closeModal = () => setIsModalOpen(false);
 
   const settings = {
     dots: true,
@@ -77,10 +82,22 @@ const Banner = () => {
   // Auto-hide success/error message after 30 seconds
   useEffect(() => {
     if (status) {
-      const timer = setTimeout(() => setStatus(""), 30000); // 30s
+      const timer = setTimeout(() => setStatus(""), 5000); // 5s
       return () => clearTimeout(timer);
     }
   }, [status]);
+
+  // ✅ Stop body scrolling when modal is open
+  useEffect(() => {
+    if (isModalOpen) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "auto";
+    }
+    return () => {
+      document.body.style.overflow = "auto";
+    };
+  }, [isModalOpen]);
 
   return (
     <div className="carousel-container">
@@ -106,7 +123,7 @@ const Banner = () => {
                   <h2>{matchedText?.text}</h2>
                   <p>Our trusted Man and Van Drivers cover the Entire UK.</p>
                   <Link>
-                    <button className="banner_form_button">
+                    <button className="banner_form_button" onClick={openModal}>
                       {matchedText?.btn}
                     </button>
                   </Link>
@@ -161,6 +178,67 @@ const Banner = () => {
           );
         })}
       </Slider>
+
+      {isModalOpen && (
+        <div className="second_sectionmodal_overlay" onClick={closeModal}>
+          <div
+            className="banner_sectionmodal_modal_content"
+            onClick={(e) => e.stopPropagation()}
+          >
+            <div className="banner_form_modal_child_div">
+              <form onSubmit={handleSubmit}>
+                <div className="banner_modal_flex_div">
+                  <h2>QuickVanUK Quotes</h2>
+
+                  <FontAwesomeIcon
+                    className="banner_modal_close_button"
+                    onClick={closeModal}
+                    icon={faXmark}
+                  />
+                </div>
+                <p>Get a Free Quote for QuickVanUK service</p>
+
+                <label>Name</label>
+                <br />
+                <input type="text" name="name" required />
+                <br />
+
+                <label>Contact number</label>
+                <br />
+                <input type="text" name="contact" required />
+                <br />
+
+                <label>Collection Address</label>
+                <br />
+                <input type="text" name="collection" required />
+                <br />
+
+                <label>Delivery Address</label>
+                <br />
+                <input type="text" name="delivery" required />
+                <br />
+
+                <button type="submit" className="banner_form_Submit_button">
+                  Submit
+                </button>
+
+                {/* Success/Error Messages */}
+                {status === "SUCCESS" && (
+                  <p style={{ color: "green", marginTop: "10px" }}>
+                    ✅ Thank you for your submission. We will get back to
+                    you shortly.
+                  </p>
+                )}
+                {status === "ERROR" && (
+                  <p style={{ color: "red", marginTop: "10px" }}>
+                    ❌ Oops! Something went wrong. Try again.
+                  </p>
+                )}
+              </form>
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   );
 };

@@ -57,6 +57,7 @@
   width: 75%;
   margin: auto;
 }
+
 .banner_form_child_div h2 {
   font-size: 26px;
   margin-bottom: 20px;
@@ -69,6 +70,42 @@
   margin-top: 5px;
   margin-bottom: 8px;
   width: 100%;
+}
+
+.banner_form_modal_child_div {
+  background-color: rgba(0, 0, 0, 0.692);
+  color: white;
+  text-align: left;
+  padding: 20px;
+  width: 100%;
+  margin: auto;
+}
+
+.banner_form_modal_child_div h2 {
+  font-size: 26px;
+  margin-bottom: 20px;
+}
+.banner_form_modal_child_div p {
+  margin-bottom: 10px;
+}
+.banner_form_modal_child_div input {
+  padding: 3px;
+  margin-top: 5px;
+  margin-bottom: 8px;
+  width: 100%;
+}
+.banner_modal_flex_div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+.banner_modal_close_button {
+  font-size: 30px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  cursor: pointer;
 }
 .banner_image_wrapper {
   position: relative;
@@ -118,7 +155,18 @@
   padding: 15px;
   border-radius: 50%;
 }
-
+.banner_sectionmodal_modal_content {
+  background-color: white;
+  padding: 30px;
+  border-radius: 12px;
+  max-width: 700px;
+  width: 100%;
+  text-align: center;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  position: relative;
+  z-index: 2;
+  margin-bottom: -100px;
+}
 @media screen and (max-width: 1536px) {
   .banner_form_grid_div {
     bottom: 30%;

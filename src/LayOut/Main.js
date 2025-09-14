@@ -22,13 +22,13 @@ const Main = () => {
       <Footer ref={footerRef} />
 
       {/* WhatsApp Icon */}
-      <a
+      {/* <a
         href="https://wa.me/447352622216" // replace with your WhatsApp number
         target="_blank"
         rel="noopener noreferrer"
       >
         <FontAwesomeIcon className="whatsapp_icon" icon={faWhatsapp} />
-      </a>
+      </a> */}
     </div>
   );
 };

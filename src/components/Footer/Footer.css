@@ -88,10 +88,16 @@
   color: blue;
   cursor: pointer;
 }
+.footer_whatsApp_ span {
+  /* display: flex;
+  align-items: center;
+  justify-content: center; */
+  color: black;
+}
 .icon_two {
-  margin-right: 10px;
-  font-size: 20px;
-  color: blue;
+  margin-right: 3px;
+  font-size: 23px;
+  color: green;
   cursor: pointer;
 }
 .icon_three {

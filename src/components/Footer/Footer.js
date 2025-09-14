@@ -5,6 +5,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faFacebook,
   faLinkedin,
+  faWhatsapp,
   faYoutube,
 } from "@fortawesome/free-brands-svg-icons";
 import { faXmark } from "@fortawesome/free-solid-svg-icons";
@@ -209,7 +210,18 @@ const Footer = forwardRef((props, ref) => {
               <Link to="https://www.facebook.com/quickvanuk/" target="_blank">
                 <FontAwesomeIcon className="icon_one" icon={faFacebook} />
               </Link>
-              {/* <FontAwesomeIcon className="icon_two" icon={faLinkedin} /> */}
+
+              <a
+                href="https://wa.me/447352622216" // replace with your WhatsApp number
+                target="_blank"
+                rel="noopener noreferrer"
+                className="footer_whatsApp_"
+              >
+                {" "}
+                <FontAwesomeIcon className="icon_two" icon={faWhatsapp} />
+                <span>+44 7352 622216</span>
+              </a>
+
               {/* <FontAwesomeIcon className="icon_three" icon={faYoutube} /> */}
             </div>
           </div>

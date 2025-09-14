@@ -83,6 +83,8 @@ import "./SecondSection.css";
 import HouseRemovalFinal from "../../accets/secondSectionPhoto/House removal final.jpg";
 import officeRemovalFinal from "../../accets/secondSectionPhoto/office removal final.jpg";
 import singleItemsFinal from "../../accets/secondSectionPhoto/single items final.jpg";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faXmark } from "@fortawesome/free-solid-svg-icons";
 
 const SecondSection = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -125,7 +127,7 @@ const SecondSection = () => {
   // Auto-hide success/error message after 30 seconds
   useEffect(() => {
     if (status) {
-      const timer = setTimeout(() => setStatus(""), 30000); // 30s
+      const timer = setTimeout(() => setStatus(""), 5000); // 30s
       return () => clearTimeout(timer);
     }
   }, [status]);
@@ -199,9 +201,17 @@ const SecondSection = () => {
             className="second_sectionmodal_modal_content"
             onClick={(e) => e.stopPropagation()}
           >
-            <div className="banner_form_child_div">
+            <div className="second_section_form_child_div">
               <form onSubmit={handleSubmit}>
-                <h2>QuickVanUK Quotes</h2>
+                <div className="banner_modal_flex_div">
+                  <h2>QuickVanUK Quotes</h2>
+
+                  <FontAwesomeIcon
+                    className="banner_modal_close_button"
+                    onClick={closeModal}
+                    icon={faXmark}
+                  />
+                </div>
                 <p>Get a Free Quote for QuickVanUK service</p>
 
                 <label>Name</label>
@@ -242,12 +252,12 @@ const SecondSection = () => {
                 )}
               </form>
             </div>
-            <button
+            {/* <button
               className="second_sectionmodal_close_button"
               onClick={closeModal}
             >
               Close
-            </button>
+            </button> */}
           </div>
         </div>
       )}
