@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./Service.css";
 
 import houseRemovalFinal from "../../accets/secondSectionPhoto/House removal final.jpg";
@@ -7,8 +7,60 @@ import singleRemovalFinal from "../../accets/secondSectionPhoto/single items fin
 
 import { Link } from "react-router-dom";
 import Banner from "./../Banner/Banner";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faXmark } from "@fortawesome/free-solid-svg-icons";
 
 const Service = () => {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [status, setStatus] = useState("");
+
+  const openModal = () => {
+    console.log("kjdjkfjdkjf");
+    setIsModalOpen(true);
+  };
+  const closeModal = () => {
+    setIsModalOpen(false);
+  };
+
+  // ✅ Stop body scrolling when modal is open
+  useEffect(() => {
+    if (isModalOpen) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "auto";
+    }
+    return () => {
+      document.body.style.overflow = "auto";
+    };
+  }, [isModalOpen]);
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    const form = e.target;
+    const data = new FormData(form);
+
+    const response = await fetch("https://formspree.io/f/mandajvv", {
+      method: "POST",
+      body: data,
+      headers: { Accept: "application/json" },
+    });
+
+    if (response.ok) {
+      setStatus("SUCCESS");
+      form.reset();
+    } else {
+      setStatus("ERROR");
+    }
+  };
+
+  // Auto-hide success/error message after 30 seconds
+  useEffect(() => {
+    if (status) {
+      const timer = setTimeout(() => setStatus(""), 5000); // 30s
+      return () => clearTimeout(timer);
+    }
+  }, [status]);
+
   // For Safari
   document.body.scrollTop = 0;
   // For Chrome, Firefox, IE and Opera
@@ -20,11 +72,7 @@ const Service = () => {
           <img className="service_photo" src={houseRemovalFinal} alt="" />
           <div>
             <h2>House Removals</h2>
-            {/* <p>
-              Perfect for home and office relocations, student moves, and small
-              deliveries. Get a professional driver and van for a hassle-free
-              experience.
-            </p> */}
+
             <p>
               Moving house doesn’t have to be stressful. QuickVanUK makes
               household removals simple with trained movers, secure vans, and
@@ -38,7 +86,9 @@ const Service = () => {
             // to="/serviceInnerPage"
             className="service_link"
           >
-            <button className="service_read_btn">GET A FREE QUOTES</button>
+            <button className="service_read_btn" onClick={openModal}>
+              GET A FREE QUOTES
+            </button>
           </Link>
         </div>
         <div className="service_cart_div">
@@ -62,7 +112,9 @@ const Service = () => {
             // to="/serviceInnerPage"
             className="service_link"
           >
-            <button className="service_read_btn">GET A FREE QUOTES</button>
+            <button className="service_read_btn" onClick={openModal}>
+              GET A FREE QUOTES
+            </button>
           </Link>
         </div>
         <div className="service_cart_div">
@@ -85,10 +137,80 @@ const Service = () => {
             // to="/serviceInnerPage"
             className="service_link"
           >
-            <button className="service_read_btn">GET A FREE QUOTES</button>
+            <button className="service_read_btn" onClick={openModal}>
+              GET A FREE QUOTES
+            </button>
           </Link>
         </div>
       </div>
+
+      {/* Modal */}
+      {isModalOpen && (
+        <div className="second_sectionmodal_overlay" onClick={closeModal}>
+          <div
+            className="second_sectionmodal_modal_content"
+            onClick={(e) => e.stopPropagation()}
+          >
+            <div className="second_section_form_child_div">
+              <form onSubmit={handleSubmit}>
+                <div className="banner_modal_flex_div">
+                  <h2>QuickVanUK Quotes</h2>
+
+                  <FontAwesomeIcon
+                    className="banner_modal_close_button"
+                    onClick={closeModal}
+                    icon={faXmark}
+                  />
+                </div>
+                <p>Get a Free Quote for QuickVanUK service</p>
+
+                <label>Name</label>
+                <br />
+                <input type="text" name="name" required />
+                <br />
+
+                <label>Contact number</label>
+                <br />
+                <input type="text" name="contact" required />
+                <br />
+
+                <label>Collection Address</label>
+                <br />
+                <input type="text" name="collection" required />
+                <br />
+
+                <label>Delivery Address</label>
+                <br />
+                <input type="text" name="delivery" required />
+                <br />
+
+                <button type="submit" className="banner_form_Submit_button">
+                  Submit
+                </button>
+
+                {/* Success/Error Messages */}
+                {status === "SUCCESS" && (
+                  <p style={{ color: "green", marginTop: "10px" }}>
+                    ✅ Thank you for your submission. We will get back to
+                    you shortly.
+                  </p>
+                )}
+                {status === "ERROR" && (
+                  <p style={{ color: "red", marginTop: "10px" }}>
+                    ❌ Oops! Something went wrong. Try again.
+                  </p>
+                )}
+              </form>
+            </div>
+            {/* <button
+                    className="second_sectionmodal_close_button"
+                    onClick={closeModal}
+                  >
+                    Close
+                  </button> */}
+          </div>
+        </div>
+      )}
     </div>
   );
 };

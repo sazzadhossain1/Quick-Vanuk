@@ -25,7 +25,7 @@ const FifthSection = () => {
             </p>
           </div>
           <div className="fifthSection_contact_us_today_div">
-            <p>Contct Us Today</p>
+            <p>Contact Us Today</p>
             {/* <p>📞 Phone: +447421492922</p> */}
             <p>📞 Phone: +44 7352 622216</p>
             <p>📧 Email: info@quickvanuk.com</p>

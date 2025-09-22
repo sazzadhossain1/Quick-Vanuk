@@ -22,7 +22,7 @@ const Pricing = () => {
             bulk bookings.
           </p>
           <div className="fifthSection_contact_us_today_div pricint_contact_us_div">
-            <p>Contct Us Today</p>
+            <p>Contact Us Today</p>
             <p>📞 Phone: +44 7352 622216</p>
             <p>📧 Email: info@quickvanuk.com</p>
           </div>

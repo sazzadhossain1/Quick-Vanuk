@@ -11,9 +11,23 @@ import "slick-carousel/slick/slick-theme.css";
 // import bannerOne from "../../accets/banner/o.jpg";
 // import bannerTwo from "../../accets/banner/t.jpg";
 // import bannerThree from "../../accets/banner/th.jpg";
-import bannerOne from "../../accets/banner/bannerOne.jpg";
-import bannerTwo from "../../accets/banner/bannerTwo.jpg";
-import bannerThree from "../../accets/banner/bannerThree.jpg";
+
+// import bannerOne from "../../accets/banner/bannerOne.jpg";
+// import bannerTwo from "../../accets/banner/bannerTwo.jpg";
+// import bannerThree from "../../accets/banner/bannerThree.jpg";
+
+// import bannerOne from "../../accets/banner/Banner-fianal-0.jpg";
+// import bannerTwo from "../../accets/banner/Banner-2-fi.jpg";
+// import bannerThree from "../../accets/banner/Banner-3-fi.jpg";
+
+// import bannerOne from "../../accets/banner/Homepageimage1withouttext_copy_1920x760.jpg";
+// import bannerTwo from "../../accets/banner/Homepageimage2withouttext_copy_1920x760.jpg";
+// import bannerThree from "../../accets/banner/Homepageimage3withouttext_copy_1920x760.jpg";
+
+import bannerOne from "../../accets/banner/Layer 0.jpg";
+import bannerTwo from "../../accets/banner/Layer 1.jpg";
+import bannerThree from "../../accets/banner/layer 2.jpg";
+
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faXmark } from "@fortawesome/free-solid-svg-icons";
@@ -50,12 +64,23 @@ const Banner = () => {
     },
     {
       id: 2,
-      text: "Complete Moving & Delivery Solution from household moves to business deliveries.",
+      text: (
+        <>
+          Complete Moving & Delivery Solution from <br /> household moves to
+          business deliveries.
+        </>
+      ),
+
       btn: "Get a Free Quote",
     },
     {
       id: 3,
-      text: "Making Every Move Hassle-Free Trustworthy & Reliable.",
+
+      text: (
+        <>
+          Making Every Move Hassle-Free <br /> Trustworthy & Reliable.
+        </>
+      ),
       btn: "Get a Free Quote",
     },
   ];

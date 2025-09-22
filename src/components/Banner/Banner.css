@@ -11,6 +11,7 @@
 .banner_form_grid_div {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  align-items: center;
   gap: 50px;
 
   position: absolute;
@@ -21,6 +22,7 @@
 }
 .banner_frorm_text_child_div {
   text-align: left;
+  margin-top: -150px;
 }
 .banner_frorm_text_child_div h2 {
   margin-bottom: 15px;
@@ -50,7 +52,7 @@
   width: 50%;
 }
 .banner_form_child_div {
-  background-color: rgba(0, 0, 0, 0.692);
+  background-color: rgba(0, 0, 0, 0.452);
   color: white;
   text-align: left;
   padding: 20px;
@@ -73,7 +75,7 @@
 }
 
 .banner_form_modal_child_div {
-  background-color: rgba(0, 0, 0, 0.692);
+  background-color: rgba(0, 0, 0, 0.945);
   color: white;
   text-align: left;
   padding: 20px;
@@ -114,9 +116,10 @@
 }
 .carousel-image {
   width: 100%;
-  height: 760px;
+  /* height: 760px; */
   object-fit: cover;
   display: block;
+  margin-top: 55px;
 }
 .image-overlay {
   position: absolute;
@@ -124,7 +127,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.4);
+  background: rgba(0, 0, 0, 0.377);
   pointer-events: none;
 }
 .banner_arrow {
@@ -169,8 +172,7 @@
 }
 @media screen and (max-width: 1536px) {
   .banner_form_grid_div {
-    bottom: 30%;
-
+    bottom: 15%;
     width: 80%;
     gap: 0;
   }
@@ -186,10 +188,26 @@
     gap: 0;
   }
 }
+@media screen and (max-width: 1300px) {
+  .banner_form_grid_div {
+    left: 10%;
+    bottom: 8%;
+    width: 90%;
+    gap: 0;
+  }
+  .carousel-image {
+    height: 565px;
+  }
+}
 @media screen and (max-width: 1188px) {
   .banner_form_grid_div {
     left: 12%;
     width: 80%;
+  }
+}
+@media screen and (max-width: 1056px) {
+  .carousel-container {
+    margin-top: -50px;
   }
 }
 @media screen and (max-width: 1024px) {
