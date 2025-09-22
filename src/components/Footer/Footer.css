@@ -88,6 +88,9 @@
   color: blue;
   cursor: pointer;
 }
+.footer_whatsApp_ {
+  margin-left: 40px;
+}
 .footer_whatsApp_ span {
   /* display: flex;
   align-items: center;
@@ -219,7 +222,15 @@
     width: 98%;
   }
 }
+@media screen and (max-width: 735px) {
+  .footer_whatsApp_ {
+    margin-left: 10px;
+  }
+}
 @media screen and (max-width: 703px) {
+  .footer_whatsApp_ {
+    margin-left: 0px;
+  }
   .footer_three_cart_parent_div {
     grid-template-columns: repeat(1, 1fr);
   }
