@@ -118,13 +118,13 @@ const Footer = forwardRef((props, ref) => {
                 <p>📧</p>
                 <p>Email: info@quickvanuk.com</p>
               </div>
-              <div className="footer_flex_div">
+              {/* <div className="footer_flex_div">
                 <p>🏢</p>
                 <p className="footer_office">
                   Office: Unit 22B, Park Avenue Industrial Estate, Sundon Park
                   Rd, Luton LU3 3BP
                 </p>
-              </div>
+              </div> */}
               <div className="footer_flex_div">
                 <p>🕒</p>
                 <p className="footer_hours">
@@ -207,9 +207,9 @@ const Footer = forwardRef((props, ref) => {
               <p className="footer_logo">QUICKVANUK</p>
             </div>
             <div className="footer_icon_div">
-              <Link to="https://www.facebook.com/quickvanuk/" target="_blank">
+              {/* <Link to="https://www.facebook.com/quickvanuk/" target="_blank">
                 <FontAwesomeIcon className="icon_one" icon={faFacebook} />
-              </Link>
+              </Link> */}
 
               <a
                 href="https://wa.me/447352622216" // replace with your WhatsApp number
@@ -578,10 +578,10 @@ const Footer = forwardRef((props, ref) => {
                 </p>
                 <p>Data Protection Officer – QuickVanUK</p>
                 <p>Email: info@quickvanuk.com</p>
-                <p>
+                {/* <p>
                   Address: Unit 22B, Park Avenue Industrial Estate, Sundon Park
                   Rd, Luton LU3 3BP
-                </p>
+                </p> */}
               </div>
             </div>
           </div>
@@ -688,10 +688,10 @@ const Footer = forwardRef((props, ref) => {
               <h4>📧 Contact Us</h4>
               <p>For questions about these terms, contact:</p>
               <p>Email: info@quickvanuk.com</p>
-              <p>
+              {/* <p>
                 Address: Unit 22B, Park Avenue Industrial Estate, Sundon Park
                 Rd, Luton LU3 3BP
-              </p>
+              </p> */}
             </div>
           </div>
         </div>

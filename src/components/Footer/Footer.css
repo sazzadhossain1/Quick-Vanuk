@@ -89,7 +89,10 @@
   cursor: pointer;
 }
 .footer_whatsApp_ {
-  margin-left: 40px;
+  display: flex;
+  text-align: right;
+
+  margin-left: 120px;
 }
 .footer_whatsApp_ span {
   /* display: flex;
@@ -212,6 +215,9 @@
   .footer_down_part_div {
     width: 98%;
   }
+  .footer_whatsApp_ {
+    margin-left: 90px;
+  }
 }
 @media screen and (max-width: 900px) {
   .footer_three_cart_parent_div {
@@ -229,7 +235,7 @@
 }
 @media screen and (max-width: 703px) {
   .footer_whatsApp_ {
-    margin-left: 0px;
+    justify-content: center;
   }
   .footer_three_cart_parent_div {
     grid-template-columns: repeat(1, 1fr);
